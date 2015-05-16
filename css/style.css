@@ -1,8 +1,11 @@
 html,
 body {
 	height: 100%;
-	font-family:"Champagne &amp; Limousines" !important;
 	/* The html and body elements cannot have any padding or margin. */
+}
+body,
+input {
+	font-family:"Champagne &amp; Limousines" !important;
 }
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -34,20 +37,22 @@ body {
 	float: left;
 	margin: 0px 10px 0px 10px;
 }
-#footer .social .fb img {
-	background-color: #0d004c;
+#footer .social img {
 	width: 50px;
 	height: 50px;
+	opacity: .8;
+}
+#footer .social .fb img {
+	background-color: #0d004c;
 }
 #footer .social .tw img {
 	background-color: #00ffff;
-	width: 50px;
-	height: 50px;
 }
-#footer .social .ig img {
+#footer .social .gp img {
 	background-color: #ffffff;
-	width: 50px;
-	height: 50px;
+}
+#footer .social img:hover {
+	opacity: 1;
 }
 
 
@@ -87,4 +92,9 @@ a.brand img {
 .navbar .brand,
 .navbar .nav a {
 	color: #ffffff !important;
+}
+
+.navbar-search input {
+	margin-top: 15px;
+	width: 200px !important;
 }

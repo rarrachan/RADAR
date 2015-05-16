@@ -9,9 +9,11 @@
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/bootstrap.css" rel="stylesheet" media="screen">
 		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="css/digital-clock.css" rel="stylesheet">
 		<!-- javascripts -->
-		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/digital-clock.js"></script>
 	</head>
 
 	<body>
@@ -52,8 +54,22 @@
 								</ul>
 							</li>
 						</ul>
+						<form class="navbar-search pull-right">
+							<input type="text" class="search-query" placeholder="Cari...">
+						</form>
+						<div class="clock">
+							<div id="Date"></div>
+							<ul>
+								<li id="hours"> </li>
+								<li id="point">:</li>
+								<li id="min"> </li>
+								<li id="point">:</li>
+								<li id="sec"> </li>
+							</ul>
+						</div>
 					</div><!--/.nav-collapse -->
 				</div>
+				
 			</div>
 		</div>
 
@@ -78,17 +94,17 @@
 				<ul class="social">
 					<li>
 						<a class="fb" href="#">
-							<img src="img/logo.png"/><br>
+							<img src="img/fb-logo.png"/><br>
 						</a>
 					</li>
 					<li>
 						<a class="tw" href="#">
-							<img src="img/logo.png"/><br>
+							<img src="img/tw-logo.png"/><br>
 						</a>
 					</li>
 					<li>
-						<a class="ig" href="#">
-							<img src="img/logo.png"/><br>
+						<a class="gp" href="#">
+							<img src="img/gp-logo.png"/><br>
 						</a>
 					</li>
 				</ul>
