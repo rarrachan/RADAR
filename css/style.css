@@ -98,3 +98,57 @@ a.brand img {
 	margin-top: 15px;
 	width: 200px !important;
 }
+
+.thumbnail {
+	float: left;
+	margin: 50px 80px 50px 100px;
+	width: 100px;
+	height: 100px;
+	border: none !important;
+}
+.thumbnail a {
+	text-align: center;
+}
+.home-title {
+	width: 120px;
+	height: 35px;
+	background-image: url("../img/bg-title.png");
+	background-size: 100%;
+}
+.home-title p{
+	padding-left: 5px;
+	padding-top: 5px;
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: bold;
+}
+.menteri {
+	background-color: #448ccb;
+	margin-top: 10px;
+	margin-right: 10px;
+	width: 250px;
+	height: 200px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	float: left;
+}
+.menteri img {
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+}
+.menteri p{
+	color: #ffffff;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 5px;
+}
+.visimisi {
+	float: left;
+	width: 500px;
+}
+.visimisi p {
+	text-indent: 30px;
+	font-style: italic;
+	text-align: justify;
+}
