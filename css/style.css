@@ -65,6 +65,10 @@ input {
 	opacity: 1;
 }
 
+.body {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 
 /* Lastly, apply responsive CSS fixes as necessary */
 @media (max-width: 767px) {
@@ -111,6 +115,38 @@ a.brand img {
 .thumbnail a {
 	text-align: center;
 }
+.thumbnail img {
+	opacity: .8;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	 	    border-radius: 10px;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+	   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+    -webkit-transition: all 0.2s ease-in-out;
+       -moz-transition: all 0.2s ease-in-out;
+         -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+}
+.thumbnail img:hover {
+	opacity: 1;
+}
+.caption p,
+.carousel-caption p{
+	font-weight: bold;
+	font-size: 18px;
+}
+.berita p{
+	font-weight: bold;
+	font-size: 15px;
+	text-align: justify;
+}
+.menteri-visimisi,
+.beasiswa-home,
+.gallery-home {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 .home-title {
 	width: 120px;
 	height: 35px;
@@ -142,7 +178,7 @@ a.brand img {
          -o-transition: all 0.2s ease-in-out;
             transition: all 0.2s ease-in-out;
 }
-.menteri img {
+.menteri img{
 	width: 150px;
 	height: 150px;
 }
@@ -152,12 +188,44 @@ a.brand img {
 	text-align: center;
 	margin-top: 5px;
 }
-.visimisi p {
+.visimisi p,
+.beasiswa-desc p {
 	text-indent: 30px;
-	font-style: italic;
+	/*font-style: italic;*/
+	font-size: medium;
+	font-weight: bold;
 	text-align: justify;
 }
 .berita {
 	background-color: #acacac;
-	height: 85px;
+	height: 95px;
+	width: 200px;
+	margin-top: 10px;
+}
+.berita .thumbnail {
+	margin: 5px;
+}
+.berita h4,
+.berita p {
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #ffffff
+}
+
+.beasiswa-img img {
+	width: 170px;
+	height: 170px;
+}
+.beasiswa-home .col-xs-6{
+	background-color: #6dd0f7;
+	-webkit-border-radius: 20px;
+	   -moz-border-radius: 20px;
+	 	    border-radius: 20px;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+	   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+    -webkit-transition: all 0.2s ease-in-out;
+       -moz-transition: all 0.2s ease-in-out;
+         -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
 }
