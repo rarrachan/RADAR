@@ -111,6 +111,12 @@ a.brand img {
 .thumbnail a {
 	text-align: center;
 }
+
+.caption p {
+
+	font-weight: bold;
+	font-size: 18px;
+}
 .home-title {
 	width: 120px;
 	height: 35px;
@@ -154,6 +160,8 @@ a.brand img {
 }
 .visimisi p {
 	text-indent: 30px;
-	font-style: italic;
+	font-size: medium;
+	font-weight: bold;
+	/*font-style: italic;*/
 	text-align: justify;
 }
