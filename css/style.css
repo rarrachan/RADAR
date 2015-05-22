@@ -17,20 +17,26 @@ input {
 }
 
 /* Set the fixed height of the footer here */
-#push,
+#push{
+	margin-bottom:100px;
+}
+
 #footer {
-	height: 130px;
+	padding-top:20px;
+	height: auto;
+	margin-top:20px;
 }
 #footer {
 	background-color: #0085c6;
 }
+
 #footer h5,
 #footer p {
 	color: #ffffff;
 }
 #footer .social {
 	float: right;
-	margin-top: -85px;
+
 }
 #footer .social li{
 	list-style: none;
@@ -108,6 +114,9 @@ a.brand img {
 	color: #ffffff !important;
 }
 
+.navbar .container{
+	padding-bottom:20px;
+}
 .navbar-search input {
 	margin-top: 15px;
 	width: 200px !important;
@@ -144,8 +153,8 @@ a.brand img {
 .menteri-visimisi,
 .beasiswa-home,
 .gallery-home {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 .home-title {
 	width: 120px;
@@ -162,7 +171,7 @@ a.brand img {
 }
 .menteri {
 	background-color: #448ccb;
-	margin-top: 10px;
+	margin-top: 20px;
 	margin-right: 10px;
 	width: 250px;
 	padding-top: 5px;
@@ -179,8 +188,9 @@ a.brand img {
             transition: all 0.2s ease-in-out;
 }
 .menteri img{
-	width: 150px;
-	height: 150px;
+	width: 50%;
+	height: 50%;
+	
 }
 .menteri p{
 	color: #ffffff;
@@ -234,6 +244,10 @@ a.brand img {
             transition: all 0.2s ease-in-out;
 }
 
+.beasiswa-home .home-title{
+	margin:20px 0px 20px 0px;
+}
+
 #sert-home{
 	margin:20px 0px 20px 0px;
 }
@@ -244,6 +258,10 @@ a.brand img {
 
 .isi p{
 	text-align:justify;
+}
+
+#sert-home{
+	margin:20px 0px 20px 0px;
 }
 
 .sert {
