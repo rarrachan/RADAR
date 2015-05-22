@@ -216,6 +216,13 @@ a.brand img {
 	width: 170px;
 	height: 170px;
 }
+
+.sertifikasi-img img{
+	width: 170px;
+	height: 170px;
+	padding-bottom: 45px;
+}
+
 .beasiswa-home .col-xs-6{
 	background-color: #6dd0f7;
 	-webkit-border-radius: 20px;
