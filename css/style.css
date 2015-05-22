@@ -196,6 +196,10 @@ a.brand img {
 	font-weight: bold;
 	text-align: justify;
 }
+
+#berita{
+	margin-bottom:25px;
+}
 .berita {
 	background-color: #acacac;
 	height: 96px;
