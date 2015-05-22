@@ -198,8 +198,7 @@ a.brand img {
 }
 .berita {
 	background-color: #acacac;
-	height: 95px;
-	width: 200px;
+	height: 96px;
 	margin-top: 10px;
 }
 .berita .thumbnail {
@@ -207,9 +206,8 @@ a.brand img {
 }
 .berita h4,
 .berita p {
-	margin-left: 10px;
-	margin-right: 10px;
-	color: #ffffff
+	margin-left: 5px;
+	color: #FFFFFF
 }
 
 .beasiswa-img img {
@@ -228,4 +226,27 @@ a.brand img {
        -moz-transition: all 0.2s ease-in-out;
          -o-transition: all 0.2s ease-in-out;
             transition: all 0.2s ease-in-out;
+}
+
+#sert-home{
+	margin:20px 0px 20px 0px;
+}
+
+.isi{
+	margin:10px 5px 5px 0px;
+}
+
+.isi p{
+	text-align:justify;
+}
+
+.sert {
+	margin-bottom: 30px;
+}
+[class*="col-"]{
+	vertical-align:center;
+}
+
+.img-center {
+	margin:0 auto;
 }
