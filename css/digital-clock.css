@@ -1,7 +1,8 @@
 .clock {
-    width: 180px;
+    width: 135px;
+    margin-right: 20px;
     color: #fff;
-    float: right;
+    float: left;
     margin-top: 10px;
     text-align: center;
 }
@@ -16,8 +17,7 @@
 .clock ul {
     list-style: none;
     text-align: center;
-    margin-left: 0px;
-    margin-bottom: 10px;
+    margin-right: 20px;
 }
 
 .clock ul li {

@@ -115,12 +115,9 @@ a.brand img {
 .navbar .container{
 	padding-bottom:20px;
 }
-.search-clock {
-	width: 180px;
-}
 .navbar-search input {
 	margin-top: 15px;
-	width: 150px !important;
+	width: 170px !important;
 }
 .thumbnail a {
 	text-align: center;
