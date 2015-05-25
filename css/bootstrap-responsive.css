@@ -460,8 +460,8 @@
 
 @media (min-width: 768px) and (max-width: 979px) {
   .row {
-    /*margin-left: -20px;*/
-    margin-left: 55px;
+    margin-left: -20px;
+/*    margin-left: 55px;*/
     *zoom: 1;
   }
   .row:before,
