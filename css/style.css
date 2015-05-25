@@ -115,9 +115,12 @@ a.brand img {
 .navbar .container{
 	padding-bottom:20px;
 }
+.search-clock {
+	width: 180px;
+}
 .navbar-search input {
 	margin-top: 15px;
-	width: 200px !important;
+	width: 150px !important;
 }
 .thumbnail a {
 	text-align: center;
@@ -203,6 +206,10 @@ a.brand img {
 }
 .berita .thumbnail {
 	margin: 5px;
+}
+.berita .thumbnail img {
+	height: 88px;
+	width: 88px;
 }
 .berita h4,
 .berita p {

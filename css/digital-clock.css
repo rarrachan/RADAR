@@ -1,20 +1,23 @@
 .clock {
-    width: 210px;
+    width: 180px;
     color: #fff;
     float: right;
-    margin-top: 5px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 #Date {
     font-size: 14px;
     text-align: center;
     text-shadow: 0 0 5px #00c6ff;
-    float: left;
+    /*float: left;*/
 }
 
 .clock ul {
     list-style: none;
     text-align: center;
+    margin-left: 0px;
+    margin-bottom: 10px;
 }
 
 .clock ul li {
