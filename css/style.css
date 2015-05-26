@@ -229,7 +229,13 @@ a.brand img {
 	   -moz-border-radius: 20px;
 	 	    border-radius: 20px;
 }
-
+.row-news {
+	float: right !important;
+	margin-right: 15px !important;
+}
+.row-news .col-sm-8 {
+	padding: 0px;
+}
 /*.isi{
 	margin:10px 5px 5px 0px;
 }

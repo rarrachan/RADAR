@@ -10,11 +10,13 @@
 		<link href="css/bootstrap.css" rel="stylesheet" media="screen">
 		<link href="css/bootstrap-responsive.css" rel="stylesheet">
 		<link href="css/digital-clock.css" rel="stylesheet">
-		<link href="css/carrousel.css" rel="stylesheet">
+		<link href="css/carousel.css" rel="stylesheet">
+		<link href="css/thumb-carousel.css" rel="stylesheet">
 		<!-- javascripts -->
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/digital-clock.js"></script>
+		<script src="js/thumb-carousel.js"></script>
 	</head>
 
 	<body>
@@ -80,7 +82,7 @@
 			<div class="container">
 
 				<!-- slideshow -->
-				<div class=" row-top row row-centered">
+				<div class="row-top row row-centered">
 					<div class="col-xs-10 col-sm-11 col-lg-7 col-centered">
 						<div id="carousel" class="carousel slide" data-ride="carousel">
 						<!-- Indicators -->
@@ -130,8 +132,8 @@
 					</div>
 							
 					<!--berita-->
-					<div class="col-xs-10 col-sm-11 col-lg-4 col-centered">
-						<div class="news pull-right">
+					<div class="row-news col-xs-10 col-sm-11 col-lg-4 col-centered">
+					<!-- 	<div class="news"> -->
 							<div class="home-title">
 								<p>Berita</p>
 							</div>
@@ -143,7 +145,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-7 col-sm-7 col-xs-7">
+							<div class="col-md-7 col-sm-8 col-xs-7">
 								<div class="berita">
 									<h4>Judul Berita</h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
@@ -156,7 +158,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-7 col-sm-7 col-xs-7">
+							<div class="col-md-7 col-sm-8 col-xs-7">
 								<div class="berita">
 									<h4>Judul Berita</h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
@@ -169,14 +171,14 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-7 col-sm-7 col-xs-7">
+							<div class="col-md-7 col-sm-8 col-xs-7">
 								<div class="berita">
 									<h4>Judul Berita</h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
 								</div>
 							</div>
 						</div>
-					</div>
+					<!-- </div> -->
 				</div>
 				
 				<!-- 4 thumbnail -->
@@ -302,48 +304,74 @@
 							<div class="home-title">
 								<p>Gallery</p>
 							</div>
-							<div class="row row-centered">
-								<div class="col-xs-6 col-sm-2 col-centered">
-									<div class="thumbnail">
-										<a href="#">
-											<img src="img/kemkoinfo.png" class="img-responsive">
-											<div class="caption">
-												<p>Kemkominfo</p>
-											</div>
-										</a>
-									</div>
-								</div>
-								<div class="col-xs-6 col-sm-2 col-centered">
-									<div class="thumbnail">
-										<a href="#">
-											<img src="img/beasiswa.png" class="img-responsive">
-											<div class="caption">
-												<p>Beasiswa</p>
-											</div>
-										</a>
-									</div>
-								</div>
-								<div class="col-xs-6 col-sm-2 col-centered">
-									<div class="thumbnail">
-										<a href="#">
-											<img src="img/gallery.png" class="img-responsive">
-											<div class="caption">
-												<p>Gallery</p>
-											</div>
-										</a>
-									</div>
-								</div>
-								<div class="col-xs-6 col-sm-2 col-centered">
-									<div class="thumbnail">
-										<a href="#">
-											<img src="img/sertifikasi.png" class="img-responsive">
-											<div class="caption">
-												<p>Sertifikasi</p>
-											</div>
-										</a>
-									</div>
-								</div>
+							<div id="thumbCarousel" class="carousel slide">
+				<!-- Carousel items -->
+				<div class="carousel-inner thumb-inner">
+					<div class="active item">
+						<div class="col-xs-3 slide1">
+							<div class="caption">
+								<p>Quisque augue ex, faucibus sit amet porta sit amet, porttitor vel lectus. Sed at sem et nisl varius faucibus. Ut nisl neque, finibus a ultrices laoreet, porttitor a lorem. Aliquam condimentum maximus nulla sit amet egestas.</p>
+								<p><a href="#" type="button" class="btn btn-primary">Learn more</a></p>
 							</div>
+							<a href="#" class="img-responsive">
+								<img src="http://placehold.it/500/f00/fff&text=1" alt="Demo Image">
+							</a>
+						</div>
+					</div><!--/item-->
+					<div class="item">
+						<div class="col-xs-3 fade1">
+							<div class="caption">
+								<p>Cras vulputate lacinia diam in facilisis. Cras consequat massa interdum, euismod magna tincidunt, gravida diam. Vivamus neque lorem, faucibus vitae luctus accumsan, iaculis ac neque. Sed vel tincidunt felis. Donec scelerisque, nibh tincidunt rhoncus efficitur, velit</p>
+								<p><a href="#" type="button" class="btn btn-primary">Learn more</a></p>
+							</div>
+							<a href="#" class="img-responsive">
+								<img src="http://placehold.it/500/f00/fff&text=2" alt="Demo Image">
+							</a>
+						</div>
+					</div><!--/item-->
+					<div class="item">
+						<div class="col-xs-3 slide2">
+							<div class="caption">
+								<p>nisl eleifend orci, eget suscipit dui odio vitae purus. Nam vulputate, arcu id luctus malesuada, diam leo vehicula erat, ut pulvinar quam libero at quam. Maecenas congue pellentesque mattis. </p>
+								<p><a href="#" type="button" class="btn btn-primary">Learn more</a></p>
+							</div>
+							<a href="#" class="img-responsive">
+								<img src="http://placehold.it/500/f00/fff&text=3" alt="Demo Image">
+							</a>
+						</div>
+					</div><!--/item-->
+					<div class="item">
+						<div class="col-xs-3 fade2">
+							<div class="caption">
+								<p>Nulla non mauris nunc. In ultricies est dolor, ac iaculis nulla hendrerit quis. Praesent ornare leo non nunc accumsan cursus. Donec gravida posuere vestibulum. Cras sed rhoncus nisl. Mauris id nulla in dolor</p>
+								<p><a href="#" type="button" class="btn btn-primary">Learn more</a></p>
+							</div>
+							<a href="#" class="img-responsive">
+								<img src="http://placehold.it/500/f00/fff&text=4" alt="Demo Image">
+							</a>
+						</div>
+					</div><!--/item-->
+					<div class="item">
+						<div class="col-xs-3 slide3">
+							<div class="caption">
+								<p>dapibus blandit eget sed ligula. Pellentesque id vestibulum augue. Donec vehicula diam nunc, at molestie nisi hendrerit sollicitudin. Praesent feugiat congue rutrum. Fusce eleifend eu leo quis feugiat. Integer et tortor eget quam auctor vulputate. </p>
+								<p><a href="#" type="button" class="btn btn-primary">Learn more</a></p>
+							</div>
+							<a href="#" class="img-responsive">
+								<img src="http://placehold.it/250/f00/fff&text=5" alt="Demo Image">
+							</a>
+						</div>
+					</div><!--/item-->
+				</div><!--/carousel-inner-->
+				
+				<a class="right carousel-control" data-href="#thumbCarousel" data-target="#thumbCarousel" data-toggle="carousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+				<a class="left carousel-control" data-href="#thumbCarousel" data-target="#thumbCarousel" data-toggle="carousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				
+			</div><!--/myCarousel-->
 						</div>
 					</div>
 				</div>

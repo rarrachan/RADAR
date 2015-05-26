@@ -1,0 +1,88 @@
+
+/*Page-header styling*/
+.page-header > h1{
+	color:#fff;
+}
+
+.carousel-control{
+	cursor:pointer;
+}
+
+.carousel-inner .active.left{
+	left: -25%;
+}
+
+.carousel-inner .next{
+	left:25%;
+}
+
+.carousel-inner .prev{
+	left:-25%;
+}
+
+.carousel-control{
+	width:4%;
+}
+
+.carousel-control.left{
+	margin-left:0;
+	background-image:none;
+}
+
+.carousel-control.right{
+	margin-right:0;
+	background-image:none;
+}
+
+.thumb-inner .thumb2-inner{
+	background:#fff;
+}
+
+/*Hide Carousel Controls until hover*/
+.carousel .carousel-control{
+	display:none;
+}
+
+/*Display Carousel Controls on hover*/
+.carousel:hover .carousel-control{
+	display:block;
+}
+
+#thumb-inner > .item{
+	position:relative;
+	overflow:hidden;
+}
+
+#thumb-inner > .item > a img{
+	position:relative;
+	overflow:hidden;
+}
+
+.caption{
+	display:none;
+	position:absolute;
+	top:0;
+	left:5.5%;
+	right:2%;
+	bottom:0;
+	background:rgba(0, 0, 0, 0.65);
+	color:#fff !important;
+	margin-top:0;
+	z-index:1000;
+	padding-left:2%;
+	padding-right:2%;
+	text-align:center;
+}
+
+.caption p{
+	padding:2%;
+}
+
+.carousel > .thumb-inner{
+	width:90%;
+	position:relative;
+	left:0;
+	right:0;
+	margin:auto;
+	background:#000;
+}
