@@ -3,6 +3,27 @@ $(document).ready(function()
     $('#thumbCarousel').carousel({
 		interval: 3000
 	})
+	$('.thumb-inner .item').each(function()
+	{
+	var next = $(this).next();
+	if(!next.length)
+	{
+		next = $(this).siblings(':first');
+	}
+
+	next.children(':first-child').clone().appendTo($(this));
+
+	for(var i=0;i<2;i++)
+	{
+		next=next.next();
+		if (!next.length)
+		{
+			next = $(this).siblings(':first');
+		}
+
+		next.children(':first-child').clone().appendTo($(this));
+	}
+	});
 });
 
 /* affix the Carousel Buttons to Carousel Item on scroll */
@@ -18,7 +39,7 @@ $(document).ready( function()
 	var carouselContainer = $('.carousel');
 	var slideInterval = 2500;
 	
-	$('#carousel').carousel({
+	$('#thumbCarousel').carousel({
 		interval:   slideInterval
 	});
 	

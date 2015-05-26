@@ -1,3 +1,29 @@
+#thumbCarousel,
+#thumbCarousel .item {
+	height: auto;
+	margin: 0px;
+	background-color: transparent;
+}
+#thumbCarousel .item img {
+	width: 100%;
+}
+#thumbCarousel .xs-col-3 {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.thumb-inner {
+    position:relative;
+    overflow:hidden;
+	width:90%;
+	left:0;
+	right:0;
+	margin:auto;
+	background-color: #acacac;
+}
+.thumb-inner .col-xs-3 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
 
 /*Page-header styling*/
 .page-header > h1{
@@ -8,15 +34,15 @@
 	cursor:pointer;
 }
 
-.carousel-inner .active.left{
+.thumb-inner .active.left{
 	left: -25%;
 }
 
-.carousel-inner .next{
+.thumb-inner .next{
 	left:25%;
 }
 
-.carousel-inner .prev{
+.thumb-inner .prev{
 	left:-25%;
 }
 
@@ -34,35 +60,21 @@
 	background-image:none;
 }
 
-.thumb-inner .thumb2-inner{
-	background:#fff;
-}
-
 /*Hide Carousel Controls until hover*/
-.carousel .carousel-control{
+#thumbCarousel .carousel-control{
 	display:none;
 }
 
 /*Display Carousel Controls on hover*/
-.carousel:hover .carousel-control{
+#thumbCarousel:hover .carousel-control{
 	display:block;
-}
-
-#thumb-inner > .item{
-	position:relative;
-	overflow:hidden;
-}
-
-#thumb-inner > .item > a img{
-	position:relative;
-	overflow:hidden;
 }
 
 .caption{
 	display:none;
 	position:absolute;
 	top:0;
-	left:5.5%;
+	left:2%;
 	right:2%;
 	bottom:0;
 	background:rgba(0, 0, 0, 0.65);
@@ -75,14 +87,6 @@
 }
 
 .caption p{
-	padding:2%;
-}
-
-.carousel > .thumb-inner{
-	width:90%;
-	position:relative;
-	left:0;
-	right:0;
-	margin:auto;
-	background:#000;
+	padding:1%;
+	font-size: 14px;
 }
