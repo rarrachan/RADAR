@@ -179,7 +179,11 @@ a.brand img {
 	text-align: center;
 	margin-top: 5px;
 }
-.visimisi p,
+.visimisi p{
+	font-size: medium;
+	font-weight: normal;
+	text-align: justify;
+}
 .beasiswa-desc p,
 .sert p {
 	text-indent: 30px;
