@@ -152,7 +152,7 @@ a.brand img {
 .home-title {
 	width: 120px;
 	height: 35px;
-	background-image: url("../img/bg-title.png");
+	background-image: url("../img/bg-title.jpg");
 	background-size: 100%;
 	margin-bottom: 20px;
 }
@@ -163,6 +163,7 @@ a.brand img {
 	color: #ffffff;
 	font-weight: bold;
 }
+
 .menteri {
 	background-color: #448ccb;
 	padding-top: 5px;
@@ -171,11 +172,7 @@ a.brand img {
 	   -moz-border-radius: 20px;
 	 	    border-radius: 20px;
 }
-.menteri img{
-	width: 50%;
-	height: 50%;
-	
-}
+
 .menteri p{
 	color: #ffffff;
 	font-size: 18px;
