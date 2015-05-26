@@ -1,7 +1,6 @@
 #thumbCarousel,
 #thumbCarousel .item {
 	height: auto;
-	margin: 0px;
 	background-color: transparent;
 }
 #thumbCarousel .item img {
