@@ -13,12 +13,12 @@ input {
 	height: auto !important;
 	height: 100%;
 	/* Negative indent footer by it's height */
-	margin: 0 auto -130px;
+	margin: 0 auto -190px;
 }
 
 /* Set the fixed height of the footer here */
 #push{
-	margin-bottom:150px;
+	margin-bottom:190px;
 }
 
 #footer {
@@ -101,6 +101,7 @@ a.brand img {
 .navbar .nav {
 	font-size: 20px;
 	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .navbar .nav > li > a:hover {
@@ -113,10 +114,10 @@ a.brand img {
 }
 
 .navbar .container{
-	padding-bottom:20px;
+	padding-bottom:0px;
 }
 .navbar-search input {
-	margin-top: 15px;
+	margin-top: 5px;
 	width: 170px !important;
 }
 .thumbnail a {
@@ -318,26 +319,7 @@ a.brand img {
 	font-weight: bold;
 }
 
-/*lookbook details style*/
-.lookbook-details ul li{
-	list-style: none;
-	float: left;
-	padding: 10px;
-}
-.lookbook-details img{
-	width: 313px;
-	height: 210px;
-	opacity: 1;
-	-webkit-transition: opacity 500ms;
-	-moz-transition: opacity 500ms;
-	-o-transition: opacity 500ms;
-	transition: opacity 500ms;
-}
-.lookbook-details img:hover{
-	opacity: .5;
-	-webkit-transition: opacity 500ms;
-	-moz-transition: opacity 500ms;
-	-o-transition: opacity 500ms;
-	transition: opacity 500ms;
-	cursor: pointer;
+/*gallery*/
+.gallery-row .col-xs-10 {
+	padding: 1%;
 }
