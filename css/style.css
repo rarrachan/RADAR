@@ -268,23 +268,20 @@ a.brand img {
     font-style: normal;
 }
 
-.top-logo{
-	width:100%;
-	height:auto;
-	margin: 0px auto;
-	text-align:center;
+.top-logo {
+	padding: 2% 10%;
+	text-align: center;
 }
+
 .top-logo p {
 	margin-top: 20px;
-	margin-bottom: 60px;
-	font-size:25px;
+	font-size:20px;
 	text-transform: uppercase;
 	font-weight: bold;
 	font-family: 'goudy-old-styleoldstylenormal';
 }
 .top-logo img {
-	width: 6%;
-	margin-top: 20px;
+	width: 7%;
 }
 
 .isi{
@@ -292,6 +289,9 @@ a.brand img {
 	padding: 2% 10%;
 }
 
+.err {
+	margin-top: 15px;
+}
 .err h3{
 	font-size:80px;
 	color:#ffffff;
