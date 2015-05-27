@@ -314,3 +314,27 @@ a.brand img {
 	font-family: 'sakkal_majallaregular';
 	font-weight: bold;
 }
+
+/*lookbook details style*/
+.lookbook-details ul li{
+	list-style: none;
+	float: left;
+	padding: 10px;
+}
+.lookbook-details img{
+	width: 313px;
+	height: 210px;
+	opacity: 1;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+}
+.lookbook-details img:hover{
+	opacity: .5;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+	cursor: pointer;
+}
