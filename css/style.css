@@ -237,14 +237,80 @@ a.brand img {
 .row-news .col-sm-8 {
 	padding: 0px;
 }
-/*.isi{
-	margin:10px 5px 5px 0px;
-}
-
-.isi p{
-	text-align:justify;
-}*/
-
 [class*="col-"]{
 	vertical-align:center;
+}
+
+/*error404 dan error500*/
+
+@font-face {
+    font-family: 'goudy-old-styleoldstylenormal';
+    src: url('../font/goudyo-webfont.eot');
+    src: url('../font/goudyo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/goudyo-webfont.woff2') format('woff2'),
+         url('../font/goudyo-webfont.woff') format('woff'),
+         url('../font/goudyo-webfont.ttf') format('truetype'),
+         url('../font/goudyo-webfont.svg#goudy-old-styleoldstylenormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sakkal_majallaregular';
+    src: url('../font/majalla-webfont.eot');
+    src: url('../font/majalla-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/majalla-webfont.woff2') format('woff2'),
+         url('../font/majalla-webfont.woff') format('woff'),
+         url('../font/majalla-webfont.ttf') format('truetype'),
+         url('../font/majalla-webfont.svg#sakkal_majallaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.top-logo{
+	width:100%;
+	height:auto;
+	margin: 0px auto;
+	text-align:center;
+}
+.top-logo p {
+	margin-top: 20px;
+	margin-bottom: 60px;
+	font-size:25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'goudy-old-styleoldstylenormal';
+}
+.top-logo img {
+	width: 6%;
+	margin-top: 20px;
+}
+
+.isi{
+	background-color:#0073B9;
+	padding: 2% 10%;
+}
+
+.err h3{
+	font-size:80px;
+	color:#ffffff;
+	padding-bottom: 70px;
+	font-family: 'goudy-old-styleoldstylenormal';
+}
+
+.err h5{
+	font-size:100px;
+	color:#ffffff;
+	font-family: 'goudy-old-styleoldstylenormal';
+}
+
+.divid{vertical-align:center;}
+
+.ket p{
+	font-size:50px;
+	color:#ffffff;
+	line-height:80px;
+	text-align:left;
+	font-family: 'sakkal_majallaregular';
+	font-weight: bold;
 }
