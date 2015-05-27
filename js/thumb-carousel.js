@@ -3,27 +3,20 @@ $(document).ready(function()
     $('#thumbCarousel').carousel({
 		interval: 3000
 	})
-	$('.thumb-inner .item').each(function()
-	{
-	var next = $(this).next();
-	if(!next.length)
-	{
-		next = $(this).siblings(':first');
-	}
-
-	next.children(':first-child').clone().appendTo($(this));
-
-	for(var i=0;i<2;i++)
-	{
-		next=next.next();
-		if (!next.length)
-		{
-			next = $(this).siblings(':first');
-		}
-
-		next.children(':first-child').clone().appendTo($(this));
-	}
-	});
+	$('#thumbCarousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+  
+  if (next.next().length>0) {
+    next.next().children(':first-child').clone().appendTo($(this));
+  }
+  else {
+  	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+  }
+});
 });
 
 /* affix the Carousel Buttons to Carousel Item on scroll */

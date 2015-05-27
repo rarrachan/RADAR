@@ -7,7 +7,7 @@
 #thumbCarousel .item img {
 	width: 100%;
 }
-#thumbCarousel .xs-col-3 {
+#thumbCarousel .col-xs-4 {
 	padding-left: 0px !important;
 	padding-right: 0px !important;
 }
@@ -34,15 +34,15 @@
 	cursor:pointer;
 }
 
-.thumb-inner .active.left{
+#thumbCarousel.active.left{
 	left: -25%;
 }
 
-.thumb-inner .next{
+#thumbCarousel.next{
 	left:25%;
 }
 
-.thumb-inner .prev{
+#thumbCarousel.prev{
 	left:-25%;
 }
 
@@ -88,5 +88,7 @@
 
 #thumbCarousel .caption p{
 	padding:1%;
-	font-size: 14px;
+	font-size: 20px;
+	font-weight: normal;
+	margin-top: 10px;
 }
