@@ -1,6 +1,7 @@
 #thumbCarousel,
 #thumbCarousel .item {
 	height: auto;
+	margin: 0px;
 	background-color: transparent;
 }
 #thumbCarousel .item img {
@@ -25,11 +26,11 @@
 }
 
 /*Page-header styling*/
-.page-header > h1{
+#thumbCarousel .page-header > h1{
 	color:#fff;
 }
 
-.carousel-control{
+#thumbCarousel .carousel-control{
 	cursor:pointer;
 }
 
@@ -45,16 +46,16 @@
 	left:-25%;
 }
 
-.carousel-control{
+#thumbCarousel .carousel-control{
 	width:4%;
 }
 
-.carousel-control.left{
+#thumbCarousel .carousel-control.left{
 	margin-left:0;
 	background-image:none;
 }
 
-.carousel-control.right{
+#thumbCarousel .carousel-control.right{
 	margin-right:0;
 	background-image:none;
 }
@@ -69,7 +70,7 @@
 	display:block;
 }
 
-.caption{
+#thumbCarousel .caption{
 	display:none;
 	position:absolute;
 	top:0;
@@ -85,7 +86,7 @@
 	text-align:center;
 }
 
-.caption p{
+#thumbCarousel .caption p{
 	padding:1%;
 	font-size: 14px;
 }

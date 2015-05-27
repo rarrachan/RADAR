@@ -248,8 +248,3 @@ a.brand img {
 [class*="col-"]{
 	vertical-align:center;
 }
-
-#thumbCarousel{
-	margin-left:-8%;
-	margin-right:-6%;
-}
