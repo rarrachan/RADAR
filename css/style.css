@@ -23,7 +23,6 @@ input {
 
 #footer {
 	padding-top:20px;
-	padding-bottom: 20px;
 	height: auto;
 	margin-top:20px;
 }
@@ -31,44 +30,13 @@ input {
 	background-color: #0085c6;
 }
 
-#footer h5,
+#footer h3,
 #footer p {
 	color: #ffffff;
 }
-#footer .social {
-	float: right;
-	margin-top: 5%;
+#footer p{
+	font-size: 16px;
 }
-#footer .social li{
-	list-style: none;
-	float: left;
-	margin: 0px 10px 0px 10px;
-}
-#footer .social img {
-	width: 50px;
-	height: 50px;
-	opacity: .8;
-	-webkit-border-radius: 10px;
-	   -moz-border-radius: 10px;
-	 	    border-radius: 10px;
-    -webkit-transition: all 0.2s ease-in-out;
-       -moz-transition: all 0.2s ease-in-out;
-         -o-transition: all 0.2s ease-in-out;
-            transition: all 0.2s ease-in-out;
-}
-/*#footer .social .fb img {
-	background-color: #0d004c;
-}
-#footer .social .tw img {
-	background-color: #00ffff;
-}
-#footer .social .gp img {
-	background-color: #ffffff;
-}*/
-#footer .social img:hover {
-	opacity: 1;
-}
-
 .body {
 	margin-top: 10px;
 	margin-bottom: 10px;
