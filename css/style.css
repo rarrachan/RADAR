@@ -341,17 +341,33 @@ a.brand img {
 
 .isiBerita p{
 	text-align:justify;
+	line-height:40px;
+	font-size:18px;
 }
 
 img{
 	text-align:center;
 }
+.sisikiri{
+	margin-left:20px;
+}
+.sisikanan{
+	margin-left:10px;
+}
+
+.terkait{
+	border-style:solid;
+	border-width:thin;
+	border-radius:20px;
+	border-color:#EFEFEF;
+}
+.terkait h3{
+	padding-left:10px;
+	background-color:#F5F5F5;
+	border-radius:10px;
+}
 .media p{
 	text-align:justify;
-}
-.media img{
-	width:100px;
-	height:auto;
 }
 
 .tag{
