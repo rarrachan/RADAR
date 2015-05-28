@@ -383,3 +383,20 @@ img{
 	color:#6DCFF6;
 	text-decoration:none;
 }
+
+.kolom-satu, .kolom-dua, .kolom-tiga{
+	margin-left:10px;
+	margin-right: 10px;
+	margin-bottom:20px;
+	border-style:solid;
+	border-width:thin;
+	border-radius:20px;
+	border-color:#EFEFEF;
+	background-color:#F5F5F5;
+}
+
+.kolom-satu p, .kolom-dua p, .kolom-tiga p{
+	font-size:15px;
+	line-height:30px;
+	text-align:justify;
+}
