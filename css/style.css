@@ -23,6 +23,7 @@ input {
 
 #footer {
 	padding-top:20px;
+	padding-bottom:20px;
 	height: auto;
 	margin-top:20px;
 }
@@ -30,7 +31,7 @@ input {
 	background-color: #0085c6;
 }
 
-#footer h3,
+#footer h4,
 #footer p {
 	color: #ffffff;
 }
@@ -147,12 +148,17 @@ a.brand img {
 	   -moz-border-radius: 20px;
 	 	    border-radius: 20px;
 }
-
+.menteri h3 {
+	text-align: center;
+	color: #ffffff;
+}
 .menteri p{
 	color: #ffffff;
 	font-size: 18px;
-	text-align: center;
-	margin-top: 5px;
+	margin: 10px;
+}
+.menteri span{
+	font-weight: bold;
 }
 .visimisi p{
 	font-size: medium;
