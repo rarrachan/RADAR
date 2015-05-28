@@ -329,3 +329,9 @@ a.brand img {
 .gallery-row .col-xs-10 {
 	padding: 1%;
 }
+
+.breadcrumb > li + li:before{
+	color:#CCCCCC;
+	content:"/ ";
+	padding: 0 5px;
+}
