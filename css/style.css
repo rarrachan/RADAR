@@ -353,3 +353,17 @@ img{
 	width:100px;
 	height:auto;
 }
+
+.tag{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.tag a{
+	color:#ffffff;
+	font-size:16px;
+	font-weight:normal;
+}
+.tag a:hover{
+	color:#6DCFF6;
+	text-decoration:none;
+}
