@@ -53,17 +53,20 @@ input {
 }
 
 #ticker {
-color: #fff;
-width: auto;
-list-style: none;
-height: 25px;
-overflow: hidden;
-border-radius: 3px;
-background: rgb(125,126,125); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(125,126,125,1)), color-stop(100%, rgba(14,14,14,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* Chrome10+,Safari5.1+ */
-background: linear-gradient(top, rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* W3C */
+	width: auto;
+	list-style: none;
+	height: 25px;
+	overflow: hidden;
+	background-color: #555555;
+	margin: 0px;
+	margin-bottom: 20px;
+}
+#ticker a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	padding-left: 10px;
+	font-weight: bold;
 }
 /* Lastly, apply responsive CSS fixes as necessary */
 @media (max-width: 767px) {
