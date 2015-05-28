@@ -94,6 +94,12 @@ input {
 	font-style:normal;
 }
 
+.brand{
+	margin-right:30px;
+}
+.brand p{
+	margin-left:-15px;
+}
 a.brand img {
 	margin-left: 13px;
 	margin-bottom: 5px;
