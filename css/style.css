@@ -56,7 +56,7 @@ input {
          -o-transition: all 0.2s ease-in-out;
             transition: all 0.2s ease-in-out;
 }
-#footer .social .fb img {
+/*#footer .social .fb img {
 	background-color: #0d004c;
 }
 #footer .social .tw img {
@@ -64,7 +64,7 @@ input {
 }
 #footer .social .gp img {
 	background-color: #ffffff;
-}
+}*/
 #footer .social img:hover {
 	opacity: 1;
 }
