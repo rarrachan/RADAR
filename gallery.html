@@ -177,22 +177,22 @@
 		<div class="container">
 			<div class="row row-centered">
 				<div class="col-xs-10 col-sm-11 col-lg-12 col-centered">
-					<div class="col-xs-6 col-md-4 col-lg-9">
+					<div class="col-xs-10 col-md-8 col-lg-9">
 						<h4>PUSAT DATA DAN SARANA INFORMATIKA<br>
 						KEMENTRIAN KOMUNIKASI DAN INFORMATIKA &copy; 2013</h4>
 						<p>Jl. Medan Merdeka Barat No. 9, Jakarta Pusat, 10110<br>
 						Kontak : kontak.kominfo.go.id<br>
 						Telepon : (021) 38433507 - (021) 38433508</p>
 					</div>
-					<div class="col-xs-6 col-md-4 col-lg-2">
-						<div class="col-md-2 col-sm-2 col-xs-2 col-lg-3">
+					<div class="col-xs-12 col-md-3 col-lg-2">
+						<div class="col-md-3 col-sm-1 col-xs-2 col-lg-3">
 							<div class="thumbnail">
 								<a class="fb" href="https://www.facebook.com/Kemkominfo">
 									<img src="img/fb.png"/ class="img-responsive">
 								</a>
 							</div>
 						</div>
-						<div class="col-md-2 col-sm-2 col-xs-2 col-lg-3">
+						<div class="col-md-3 col-sm-1 col-xs-2 col-lg-3">
 							<div class="thumbnail">
 								<a class="tw" href="https://www.twitter.com/Kemkominfo">
 									<img src="img/twitter.png"/ class="img-responsive">
@@ -200,7 +200,18 @@
 							</div>
 						</div>
 					</div>
-					<a href="#" class="scrollup" title="Back to Top!"></a>
+					<!-- back to top -->
+					<script type="text/javascript">
+						$(document).ready(function(){
+							$('.scrollup').click(function () {
+								$('body,html').animate({
+									scrollTop: 0
+								}, 800);
+								return false;
+							});
+						});
+					</script>
+					<a class="scrollup"></a>
 				</div>
 			</div>
 		</div>

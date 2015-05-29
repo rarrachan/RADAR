@@ -50,6 +50,7 @@ input {
 	height: 50px;
 	position: absolute;
 	bottom: 0;
+	cursor: pointer;
 }
 
 /* Lastly, apply responsive CSS fixes as necessary */
@@ -62,7 +63,7 @@ input {
 	}
 }
 [class*="col-"]{
-	vertical-align:center;
+	vertical-align:middle;
 }
 
 @font-face {
@@ -227,6 +228,7 @@ a.brand img {
 
 .beasiswa-img,
 .sert-img{
+	margin-top: 10px;
 	background-color: #6dd0f7;
 	-webkit-border-radius: 20px;
 	   -moz-border-radius: 20px;
@@ -400,6 +402,11 @@ img{
 	.live-tweet,
 	#banner,
 	#news-ticker{
+		display: none;
+	}
+}
+@media (max-width:380px) {
+	#slideshow-carousel {
 		display: none;
 	}
 }
