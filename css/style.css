@@ -424,6 +424,9 @@ img{
 .banner-fade {
 	width: 100%;
 }
+#close-banner {
+	cursor: pointer;
+}
 #banner p{
 	float: left;
 	font-size: 14px;
