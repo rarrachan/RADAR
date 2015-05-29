@@ -126,11 +126,6 @@ a.brand img {
 	font-weight: bold;
 	font-size: 18px;
 }
-.berita p{
-	font-weight: bold;
-	font-size: 15px;
-	text-align: justify;
-}
 .menteri,
 .visimisi{
 	margin-bottom: 25px;
@@ -144,15 +139,15 @@ a.brand img {
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
-.col-sm-7 .live-tweet{
 
-}
 .home-title {
 	width: 120px;
 	height: 35px;
 	background-image: url("../img/bg-title.png");
 	background-size: 100%;
 	margin-bottom: 20px;
+	position: relative;
+	z-index: 10;
 }
 .home-title p{
 	padding-left: 5px;
@@ -164,8 +159,8 @@ a.brand img {
 
 .menteri {
 	background-color: #448ccb;
-	padding-top: 5px;
-	padding-bottom: 5px;
+/*	padding-top: 5px;
+	padding-bottom: 5px;*/
 	-webkit-border-radius: 20px;
 	   -moz-border-radius: 20px;
 	 	    border-radius: 20px;
@@ -200,6 +195,13 @@ a.brand img {
 .four-thumbnails .col-centered{
 	text-align: center !important;
 }
+
+.berita p{
+	font-weight: bold;
+	font-size: 15px;
+	text-align: justify;
+	margin-left: 10px;
+}/*
 .berita {
 	background-color: #acacac;
 	height: 96px;
@@ -208,17 +210,35 @@ a.brand img {
 .berita .thumbnail {
 	margin: 5px;
 }
-.berita .thumbnail img {
-	height: 88px;
-	width: 88px;
-}
+
 .berita h4,
 .berita p {
 	margin-left: 5px;
 	margin-right: 5px;
 	color: #FFFFFF
+}*/
+.panel {
+	margin-top: -59px;
+	margin-left: 5px;
+}
+.berita .home-title {
+	position: relative;
+}
+.berita img {
+	height: 60px;
+	width: 100px;
+}
+.panel ul.berita{
+    padding:0px;
+    margin:0px;
+    list-style:none;
 }
 
+.berita .news-item{
+    padding:4px 4px;
+    margin:0px;
+    border-bottom:1px dotted #555; 
+}
 .beasiswa-img img,
 .sert-img img {
 	width: 170px;

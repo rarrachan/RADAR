@@ -21,6 +21,7 @@
 		<script src="js/bootstrap.js"></script>
 		<script src="js/digital-clock.js"></script>
 		<script src="js/jquery.ticker.js"></script>
+		<script src="js/jquery.bootstrap.newsbox.js" type="text/javascript"></script>
 
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -125,6 +126,9 @@
 
 				<!-- ticker -->
 				<div id="news-ticker">
+					<div class="home-title">
+						<p>Latest News</p>
+					</div>
 					<ul id="js-news" class="js-hidden">
 						<li class="news-item"><a href="#">jQuery News Ticker now has support for multiple tickers per page!</a></li>
 						<li class="news-item"><a href="#">jQuery News Ticker now has support for right-to-left languages!</a></li>
@@ -222,50 +226,111 @@
 					</div>
 							
 					<!--berita-->
+					<script type="text/javascript">
+						$(function () {
+							$(".berita").bootstrapNews({
+								newsPerPage: 3,
+								autoplay: true,
+								pauseOnHover: true,
+								direction: 'up',
+								newsTickerInterval: 4000,
+								onToDo: function () {
+									//console.log(this);
+								}
+							});
+						});
+					</script>
 					<div class="row-news col-xs-10 col-sm-11 col-lg-4 col-centered">
 						<div class="home-title">
 							<p>Berita</p>
 						</div>
-						
-						<div class="col-md-3 col-sm-3 col-xs-3">
-							<div class="berita">
-								<div class="thumbnail">
-									<img src="img/square.png" class="img-responsive">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<span class="glyphicon glyphicon-list-alt"></span>
+									<b>News</b>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-xs-12">
+										<ul class="berita">
+											<li class="news-item">
+												<table cellpadding="4">
+													<tr>
+														<td>
+															<img src="img/logo.png" class="img-circle" />
+														</td>
+														<td>
+															<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></p>
+														</td>
+													</tr>
+												</table>
+											</li>
+											<li class="news-item">
+												<table cellpadding="4">
+													<tr>
+														<td>
+															<img src="img/logo.png" width="60" class="img-circle" />
+														</td>
+														<td>
+															<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></p>
+														</td>
+													</tr>
+												</table>
+											</li>
+											<li class="news-item">
+												<table cellpadding="4">
+													<tr>
+														<td>
+															<img src="img/logo.png" width="60" class="img-circle" />
+														</td>
+														<td>
+															<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></p>
+														</td>
+													</tr>
+												</table>
+											</li>
+											<li class="news-item">
+												<table cellpadding="4">
+													<tr>
+														<td>
+															<img src="img/logo.png" width="60" class="img-circle" />
+														</td>
+														<td>
+															<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></p>
+														</td>
+													</tr>
+												</table>
+											</li>
+											<li class="news-item">
+												<table cellpadding="4">
+													<tr>
+														<td>
+															<img src="img/logo.png" width="60" class="img-circle" />
+														</td>
+														<td>
+															<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></p>
+														</td>
+													</tr>
+												</table>
+											</li>
+											<li class="news-item">
+												<table cellpadding="4">
+													<tr>
+														<td>
+															<img src="img/logo.png" width="60" class="img-circle" />
+														</td>
+														<td>
+															<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></p>
+														</td>
+													</tr>
+												</table>
+											</li>
+										</ul>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-7">
-							<div class="berita">
-								<h4>Judul Berita</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3">
-							<div class="berita">
-								<div class="thumbnail">
-									<img src="img/square.png" class="img-responsive">
-								</div>
-							</div>
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-7">
-							<div class="berita">
-								<h4>Judul Berita</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3">
-							<div class="berita">
-								<div class="thumbnail">
-									<img src="img/square.png" class="img-responsive">
-								</div>
-							</div>
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-7">
-							<div class="berita">
-								<h4>Judul Berita</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-							</div>
-						</div>
+							<div class="panel-footer"> </div>
+						</div> <!--./panel-->
 					</div>
 				</div>
 				
@@ -355,8 +420,8 @@
 										<div class="home-title">
 											<p>Live Tweet</p>
 										</div>
-										<p>
-											<a class="twitter-timeline" href="https://twitter.com/kemkominfo" height="400" width="auto" data-widget-id="374742616736161792">Tweets by @kemkominfo</a>
+										<p style="margin-top:-55px; margin-left: 5px;">
+											<a class="twitter-timeline" href="https://twitter.com/kemkominfo" height="480" width="auto" data-widget-id="374742616736161792">Tweets by @kemkominfo</a>
 											<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 										</p>
 									</div>
