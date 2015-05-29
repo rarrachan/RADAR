@@ -256,10 +256,12 @@ a.brand img {
 }
 .row-news {
 	float: right !important;
-	margin-right: 15px !important;
 }
 .row-news .col-sm-8 {
 	padding: 0px;
+}
+#gallery-carousel {
+	margin: 0px 15px;
 }
 
 /*error404 dan error500*/
@@ -425,9 +427,20 @@ img{
 		display: none;
 	}
 }
-@media (max-width:380px) {
+@media (max-width:500px) {
 	#slideshow-carousel {
 		display: none;
+	}
+}
+@media (min-width:500px) and (max-width:768px) {
+	.carousel {
+		height: 270px !important;
+	}
+	.carousel .item {
+		height: 270px !important;
+	}
+	.carousel-inner > .item > img {
+		height: 270px !important;
 	}
 }
 
