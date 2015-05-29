@@ -235,9 +235,10 @@ a.brand img {
 }
 
 .berita .news-item{
-    padding:4px 4px;
+    padding:4px 5px;
     margin:0px;
-    border-bottom:1px dotted #555; 
+    border-bottom:1px dotted #555;
+    border-top:1px dotted #555;
 }
 .beasiswa-img img,
 .sert-img img {
