@@ -52,22 +52,6 @@ input {
 	bottom: 0;
 }
 
-#ticker {
-	width: auto;
-	list-style: none;
-	height: 25px;
-	overflow: hidden;
-	background-color: #555555;
-	margin: 0px;
-	margin-bottom: 20px;
-}
-#ticker a{
-	color: #fff;
-	text-decoration: none;
-	font-size: 16px;
-	padding-left: 10px;
-	font-weight: bold;
-}
 /* Lastly, apply responsive CSS fixes as necessary */
 @media (max-width: 767px) {
 	#footer {
@@ -146,12 +130,21 @@ a.brand img {
 	font-size: 15px;
 	text-align: justify;
 }
-.menteri-visimisi,
+.menteri,
+.visimisi{
+	margin-bottom: 25px;
+}
+.menteri-visimisi{
+	margin-top: 25px;
+}
 .beasiswa-home,
 .gallery-home,
 .sert-home {
 	margin-top: 25px;
 	margin-bottom: 25px;
+}
+.col-sm-7 .live-tweet{
+
 }
 .home-title {
 	width: 120px;
@@ -384,6 +377,7 @@ img{
 	text-decoration:none;
 }
 
+/* kolom html */
 .kolom-satu, .kolom-dua, .kolom-tiga{
 	margin-left:10px;
 	margin-right: 10px;
@@ -399,4 +393,95 @@ img{
 	font-size:15px;
 	line-height:30px;
 	text-align:justify;
+}
+
+/* responsive home */
+@media (max-width:1200px) {
+	.live-tweet,
+	#banner,
+	#news-ticker{
+		display: none;
+	}
+}
+
+/* banner */
+#banner {
+	width: 100%;
+	height: 230px;
+	margin-bottom: 20px;
+}
+
+#banner img {
+	width: 100%;
+	height: 200px;
+}
+
+#banner span{
+	float: right;
+	background-color:#F5F5F5;
+	padding: 5px 5px 0px 5px;
+}
+.banner-fade {
+	width: 100%;
+}
+#banner p{
+	float: left;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding-right: 5px;
+	margin-top: -2px;
+}
+#banner-carousel,
+#banner-carousel .carousel-inner {
+	height: 200px;
+}
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+now override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
 }
