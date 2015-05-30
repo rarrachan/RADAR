@@ -776,34 +776,60 @@ now override the 3.3 new styles for modern browsers & apply opacity
 .container-fluid{
 	margin:0;
 	padding:0;
-	background-image: url("../img/under.jpg");
-	font-family:Franchise;
+	font-family:'franchise';
 }
 
 .cons-top{
 	padding-top:50px;
+	background-color: #0072bc;
+	margin: 0px auto;
+	width: 100%;
 }
 .cons-top h1{
 	font-size:200px;
-	margin-bottom:30px;
 	text-align:center;
 	color:#1A1A1A;
 }
-
-.cons-middle img{
-	width:180px;
+.upper-line {
+	border-top: 10px solid #1a1a1a;
 }
-
+.cons-middle {
+	background-color: #555555;
+	width: 100%;
+	height: 60px;
+	margin: 0px auto;
+}
+.cons-middle .kominfo {
+	width: 300px;
+	margin: 0px auto;
+}
+.cons-middle img{
+	width:110px;
+	float: left;
+	position: relative;
+	top: -20px;
+}
 .cons-middle p{
-	padding-top:50px;
+	padding-top: 5px;
+	padding-left: 20px;
+	text-align: center;
+	float: left;
 	font-size:30px;
 	color:#ffffff;
 	font-family:'Champagne &amp; Limousines';
 }
 
+.cons-bottom {
+	background-color: transparent;
+	width: 100%;
+	margin: 0px auto;
+}
+.bottom-line {
+	border-bottom: 10px solid #545454;
+}
 .cons-bottom h3{
 	font-size:80px;
-	margin-top:30px;
+	margin-top:50px;
 	text-align:center;
 	color:#545454;
 	
