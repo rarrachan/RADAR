@@ -16,10 +16,10 @@
 		<link href="css/ticker-style.css" rel="stylesheet">
 
 		<!-- javascripts -->
-		<script src="js/jquery.js"></script>
-		<script src="js/bootstrap.js"></script>
-		<script src="js/digital-clock.js"></script>
-		<script src="js/jquery.ticker.js"></script>
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script src="js/bootstrap.js" type="text/javascript"></script>
+		<script src="js/digital-clock.js" type="text/javascript"></script>
+		<script src="js/jquery.ticker.js" type="text/javascript"></script>
 		<script src="js/jquery.bootstrap.newsbox.js" type="text/javascript"></script>
 
 		<!--[if lt IE 9]>
@@ -30,9 +30,10 @@
 
 	<body>
 
-
+	<!-- wrap to push footer sticky to bottom -->
     <div id="wrap">
 
+    	<!-- /.error-top -->
     	<div class="navbar navbar-static-top">
 			<div class="navbar-inner">
 				<div class="container">
@@ -99,7 +100,7 @@
 								</ul>
 							</li>
 						</ul>
-					</div><!--/.nav-collapse -->
+					</div> <!-- /.nav-collapse -->
 					<div class="nav navbar-nav navbar-right">
 						<div class="clock">
 							<div id="Date"></div>
@@ -114,20 +115,20 @@
 						<form class="navbar-search">
 							<input type="text" class="search-query" placeholder="Cari...">
 						</form>
-					</div>
-				</div>
-			</div>
-		</div>
+					</div> <!-- /.navbar-right -->
+				</div> <!-- /.container -->
+			</div> <!-- /.navbar-inner -->
+		</div> <!-- /.navbar-static-top -->
 
-		<!-- Begin page content -->
+		<!-- begin of page content -->
 		<div class="body">
 			<div class="container">
 
-				<!-- ticker -->
+				<!-- begin of news ticker -->
 				<div id="news-ticker">
 					<div class="home-title">
 						<p>Latest News</p>
-					</div>
+					</div> <!-- /.home-title -->
 					<ul id="js-news" class="js-hidden">
 						<li class="news-item"><a href="#">jQuery News Ticker now has support for multiple tickers per page!</a></li>
 						<li class="news-item"><a href="#">jQuery News Ticker now has support for right-to-left languages!</a></li>
@@ -137,10 +138,13 @@
 						<li class="news-item"><a href="#">jQuery News Ticker is now compatible with jQuery 1.3.2! See below for further details and for latest download.</a></li>
 						<li class="news-item">Further updates to jQuery News Ticker are coming soon!</a></li>
 					</ul>
-				</div>
+				</div> <!-- /.news-ticker -->
 				<div class="clearfix"></div>
-				
-				<!-- pop up banner -->
+				<!-- end of news ticker -->
+	
+
+				<!-- begin of pop up banner -->
+				<!-- javascript for pop up banner close button -->
 				<script>
 					$(document).ready(function(){
 						$("#close-banner").click(function(){
@@ -149,41 +153,57 @@
 						$('#banner-carousel, #slideshow-carousel, #gallery-carousel').carousel();
 					});	
 				</script>
+				<!-- end of javascript for pop up banner close button -->
+				<!-- begin of content pop up banner -->
 				<div id="banner">
+					<!-- close button for banner -->
 					<a id="close-banner">
 						<span class="glyphicon glyphicon-remove-sign" aria-hidden="true">
 							<p>Close</p>
 						</span>
 					</a>
 					<div class="clearfix"></div>
+					<!-- end of close button for banner -->
 
+					<!-- begin of banner slider -->
 					<div id="banner-carousel" class="carousel slide carousel-fade" data-ride="carousel">
 						<!-- Wrapper for slides -->
 						<div class="carousel-inner" role="listbox">
 							<div class="item active">
 								<img src="img/gallery-5.jpg" class="img-responsive">
-							</div>
+							</div><!-- /.item -->
 							<div class="item">
 								<img src="img/gallery-4.jpg" class="img-responsive">
-							</div>
+							</div><!-- /.item -->
 							<div class="item">
 								<img src="img/gallery-2.jpg" class="img-responsive">
-							</div>
+							</div><!-- /.item -->
 						</div>
-					</div>
-				</div>
-				<div class="clearfix"></div>
+					</div> <!-- /#banner-carousel -->
+					<!-- end of banner slider -->
+				</div> <!-- /#banner -->
+				<!-- end of content pop up banner -->
 
-				<!-- slideshow -->
+				<div class="clearfix"></div>
+				<!-- end of pop up banner -->
+
+
+				<!-- begin of row-top -->
 				<div class="row-top row row-centered">
+
+					<!-- begin of slideshow -->
 					<div class="col-xs-10 col-sm-11 col-lg-7 col-centered">
 						<div id="slideshow-carousel" class="carousel slide" data-ride="carousel">
-						<!-- indicators -->
+
+						<!-- indicators for slideshow -->
 						<ol class="carousel-indicators">
 							<li data-target="#slideshow-carousel" data-slide-to="0" class="active"></li>
 							<li data-target="#slideshow-carousel" data-slide-to="1"></li>
 							<li data-target="#slideshow-carousel" data-slide-to="2"></li>
 						</ol>
+						<!-- end of indicators for slideshow -->
+
+						<!-- wrapper for slideshow  -->
 						<div class="carousel-inner" role="listbox">
 							<div class="item active">
 								<img class="first-slide" src="img/image-slider-1.jpg" alt="First slide">
@@ -193,7 +213,8 @@
 										<p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
 									</div>
 								</div>
-							</div>
+							</div> <!-- /.item -->
+
 							<div class="item">
 								<img class="second-slide" src="img/image-slider-2.jpg" alt="Second slide">
 								<div class="container">
@@ -202,7 +223,8 @@
 										<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 									</div>
 								</div>
-							</div>
+							</div> <!-- /.item -->
+
 							<div class="item">
 								<img class="third-slide" src="img/image-slider-3.jpg" alt="Third slide">
 								<div class="container">
@@ -211,23 +233,30 @@
 										<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. a.</p>
 									</div>
 								</div>
-							</div>
-						</div>
-							<a class="left carousel-control" href="#slideshow-carousel" role="button" data-slide="prev">
-								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-								<span class="sr-only">Previous</span>
-							</a>
-							<a class="right carousel-control" href="#slideshow-carousel" role="button" data-slide="next">
-								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-								<span class="sr-only">Next</span>
-							</a>
+							</div> <!-- /.item -->
+						</div> <!-- /.carousel-inner -->
+						<!-- end of wrapper for slideshow -->
+
+						<!-- button control for slideshow -->
+						<a class="left carousel-control" href="#slideshow-carousel" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#slideshow-carousel" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+						<!-- end of button control for slideshow -->
+
 						</div><!-- /.carousel -->
 					</div>
+					<!-- end of slideshow -->
 							
-					<!--berita-->
+					<!-- begin of news -->
+					<!-- javascript for news  -->
 					<script type="text/javascript">
 						$(function () {
-							$(".berita").bootstrapNews({
+							$(".news").bootstrapNews({
 								newsPerPage: 3,
 								autoplay: true,
 								pauseOnHover: true,
@@ -239,19 +268,26 @@
 							});
 						});
 					</script>
+					<!-- end of javascript for news -->
+
+					<!-- begin of row-news -->
 					<div class="row-news col-xs-10 col-sm-11 col-lg-4 col-centered">
 						<div class="home-title">
 							<p>Berita</p>
-						</div>
+						</div><!-- /.home-title -->
+
+						<!-- begin of panel for news -->
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<span class="glyphicon glyphicon-list-alt"></span>
-									<b>News</b>
-							</div>
+								<b>News</b>
+							</div> <!-- /.panel-heading -->
+
 							<div class="panel-body">
 								<div class="row">
 									<div class="col-xs-12">
-										<ul class="berita">
+										<!-- begin of news item content -->
+										<ul class="news">
 											<li class="news-item">
 												<table cellpadding="4">
 													<tr>
@@ -263,7 +299,7 @@
 														</td>
 													</tr>
 												</table>
-											</li>
+											</li> <!-- /.news-item -->
 											<li class="news-item">
 												<table cellpadding="4">
 													<tr>
@@ -275,7 +311,7 @@
 														</td>
 													</tr>
 												</table>
-											</li>
+											</li> <!-- /.news-item -->
 											<li class="news-item">
 												<table cellpadding="4">
 													<tr>
@@ -287,7 +323,7 @@
 														</td>
 													</tr>
 												</table>
-											</li>
+											</li> <!-- /.news-item -->
 											<li class="news-item">
 												<table cellpadding="4">
 													<tr>
@@ -299,7 +335,7 @@
 														</td>
 													</tr>
 												</table>
-											</li>
+											</li> <!-- /.news-item -->
 											<li class="news-item">
 												<table cellpadding="4">
 													<tr>
@@ -311,7 +347,7 @@
 														</td>
 													</tr>
 												</table>
-											</li>
+											</li> <!-- /.news-item -->
 											<li class="news-item">
 												<table cellpadding="4">
 													<tr>
@@ -323,17 +359,24 @@
 														</td>
 													</tr>
 												</table>
-											</li>
+											</li> <!-- /.news-item -->
 										</ul>
+										<!-- end of news item content -->
 									</div>
-								</div>
-							</div>
-							<div class="panel-footer"> </div>
+								</div> <!-- /.row -->
+							</div><!-- /.panel-body -->
+
+							<!-- begin of button control for news -->
+							<div class="panel-footer"></div>
+							<!-- end of button control for news-->
+
 						</div> <!--./panel-->
-					</div>
-				</div>
+					</div> <!-- /.row-news -->
+				</div> <!-- /.row-top -->
+				<!-- end of row-top -->
+
 				
-				<!-- 4 thumbnail -->
+				<!-- begin of four-thumbnails -->
 				<div class="four-thumbnails">
 					<div class="row row-centered">
 						<div class="col-xs-6 col-sm-2 col-centered">
@@ -344,7 +387,7 @@
 										<p>Kemkominfo</p>
 									</div>
 								</a>
-							</div>
+							</div> <!-- /.thumbnail -->
 						</div>
 						<div class="col-xs-6 col-sm-2 col-centered">
 							<div class="thumbnail">
@@ -354,7 +397,7 @@
 										<p>Beasiswa</p>
 									</div>
 								</a>
-							</div>
+							</div> <!-- /.thumbnail -->
 						</div>
 						<div class="col-xs-6 col-sm-2 col-centered">
 							<div class="thumbnail">
@@ -364,7 +407,7 @@
 										<p>Gallery</p>
 									</div>
 								</a>
-							</div>
+							</div> <!-- /.thumbnail -->
 						</div>
 						<div class="col-xs-6 col-sm-2 col-centered">
 							<div class="thumbnail">
@@ -374,20 +417,24 @@
 										<p>Sertifikasi</p>
 									</div>
 								</a>
-							</div>
+							</div> <!-- /.thumbnail -->
 						</div>
-					</div>
-				</div>
+					</div> <!-- /.row -->
+				</div> <!-- /.four-thumbnails -->
+				<!-- end of four thumbnails -->
 
-				<!-- menteri, visi, misi -->
+
+				<!-- begin of menteri visi misi -->
 				<div class="menteri-visimisi">
 					<div class="row row-centered">
 						<div class="col-xs-11 col-sm-11 col-lg-12 col-centered">
-							<div class="row row-centered">
+							<div class="row row-centered">	
+
+								<!-- begin of menteri profile -->
 								<div class="col-xs-10 col-sm-4 col-md-4 col-lg-3 col-centered">
 									<div class="home-title"> <a name="kemkom"></a>
 										<p>Menkominfo</p>
-									</div>
+									</div> <!-- /.home-title -->
 									<div class="menteri">
 										<div class="thumbnail">
 											<img src="img/menteri.png" class="img-responsive">
@@ -396,13 +443,16 @@
 											<span>Pendidikan : </span>Bachelor of Science in Statistics, University of Padjadjaran<br>
 											Master in Business Administration, IPPM 
 											</p>
-										</div>
-									</div>
+										</div> <!-- /.thumbnail -->
+									</div> <!-- /.menteri -->
 								</div>
+								<!-- end of menteri profile -->
+
+								<!-- begin of visi misi -->
 								<div class="col-xs-10 col-sm-7 col-md-6 col-lg-5 col-centered">
 									<div class="home-title">
 										<p>Visi Misi</p>
-									</div>
+									</div> <!-- /.home-title -->
 									<div class="visimisi">
 										<h3>VISI</h3>
 										<p>Terwujudnya Indonesia informatif menuju masyarakat sejahtera melalui pembangunan kominfo berkelanjutan, yang merakyat dan ramah lingkungan, dalam kerangka Negara Kesatuan Republik Indonesia.</p>
@@ -412,38 +462,46 @@
 										<p>3. Mendorong peningkatan tayangan dan informasi edukatif untuk mendukung pembangunan karakter bangsa;</p>
 										<p>4. Mengembangkan sistem kominfo yang berbasis kemampuan lokal yang berdaya saing tinggi dan ramah lingkungan;</p>
 										<p>5. Memperjuangkan kepentingan nasional kominfo dalam sistem pasar global.</p>
-									</div>
+									</div> <!-- /.visimisi -->
 								</div>
+								<!-- end of visi misi -->
+
+								<!-- begin of live tweet -->
 								<div class="col-xs-10 col-sm-5 col-md-4 col-lg-3 col-centered">
 									<div class="live-tweet">
 										<div class="home-title">
 											<p>Live Tweet</p>
-										</div>
+										</div> <!-- /.home-title -->
 										<p style="margin-top:-55px; margin-left: 5px;">
 											<a class="twitter-timeline" href="https://twitter.com/kemkominfo" height="480" width="auto" data-widget-id="374742616736161792">Tweets by @kemkominfo</a>
+											<!-- javascript for twitter widget -->
 											<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+											<!-- end of javascript for twitter widget -->
 										</p>
-									</div>
+									</div> <!-- /.live-tweet -->
 								</div>
+								<!-- end of live tweet -->
 							</div>
 						</div>
-					</div>
-				</div>
- 
-				<!--beasiswa-->
+					</div> <!-- /.row -->
+				</div> <!-- /.menteri-visimisi -->
+				<!-- end of menteri visi misi -->
+
+
+				<!-- begin of beasiswa -->
 				<div class="beasiswa-home">
 					<div class="row row-centered">
 						<div class="col-xs-10 col-sm-11 col-lg-12 col-centered">
 							<div class="home-title"> <a name="beasiswa"></a>
 								<p>Beasiswa</p>
-							</div>
+							</div> <!-- /.home-title -->
 							<div class="row row-centered">
 								<div class="col-xs-10 col-md-6 col-lg-6 col-centered">
 									<div class="beasiswa-desc pull-left">
 										<h3>PSIKOTES PROGRAM BEASISWA S2 LUAR NEGERI KEMENTERIAN KOMINFO TAHUN 2015</h3>
 										<p>(Ciputat, 14 April 2015) Kementerian Komunikasi dan Informatika melalui Badan Penelitian dan Pengembangan SDM menyelenggarakan Seleksi Tahap II Program Beasiswa S2 Luar Negeri Kementerian Kominfo Tahun 2015 bagi pelamar yang telah dinyatakan lolos Seleksi Tahap I seleksi administratif. Seleksi Tahap II ini diselenggarakan di Pusat TIK Nasional, Ciputat, selama dua hari, yaitu Selasa, 14 April 2015, untuk psikotes dan Rabu, 15 April 2015, untuk tes wawancara.</p>
 										<a class="btn btn-primary btn-lg pull-right" href="https://balitbang.kominfo.go.id/beasiswa/?p=629">See more</a>
-									</div>
+									</div> <!-- /.beasiswa-desc -->
 								</div>
 								
 								<div class="col-xs-10 col-md-4 col-lg-3 col-centered">
@@ -451,21 +509,23 @@
 										<div class="thumbnail">
 											<img src="img/beasiswa.png" class="img-responsive">
 										</div>
-									</div>
+									</div> <!-- /.beasiswa-img -->
 								</div>
-							</div>
+							</div> <!-- /.row -->
 						</div>
-					</div>
-				</div>
+					</div> <!-- /.row -->
+				</div> <!-- /.beasiswa-home -->
+				<!-- end of beasiswa -->
 
-				<!--gallery-->
+
+				<!-- begin of gallery -->
 				<div class="gallery-home">
 					<div class="row row-centered">
 						<div class="col-xs-10 col-sm-11 col-lg-12 col-centered">
 							<div class="home-title"> <a name="gallery"></a>
 								<p>Gallery</p>
-							</div>
-
+							</div> <!-- /.home-title -->
+							<!-- begin of gallery carousel -->
 							<div id="gallery-carousel" class="carousel slide" data-ride="carousel">
 								<div class="carousel-inner" role="listbox">
 									<div class="item active">
@@ -474,55 +534,62 @@
 											<div class="carousel-caption">
 												<h3>Example headline.</h3>
 												<p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-											</div>
-										</div>
-									</div>
+											</div> <!-- /.carousel-caption -->
+										</div> <!-- /.container -->
+									</div> <!-- /.item -->
+
 									<div class="item">
 										<img src="img/gallery-2.jpg" class="img-responsive">
 										<div class="container">
 											<div class="carousel-caption">
 												<h3>Another example headline.</h3>
 												<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-											</div>
-										</div>
-									</div>
+											</div> <!-- /.carousel-caption -->
+										</div> <!-- /.container -->
+									</div> <!-- /.item -->
+
 									<div class="item">
 										<img src="img/gallery-3.jpg" class="img-responsive">
 										<div class="container">
 											<div class="carousel-caption">
 												<h3>headline</h3>
 												<p>example captions</p>
-											</div>
-										</div>
-									</div>
+											</div> <!-- /.carosuel-caption -->
+										</div> <!-- /.container -->
+									</div> <!-- /.item -->
+
 									<div class="item">
 										<img src="img/gallery-4.jpg" class="img-responsive">
 										<div class="container">
 											<div class="carousel-caption">
 												<h3>headline</h3>
 												<p>example captions</p>
-											</div>
-										</div>
-									</div>
+											</div> <!-- /.carousel-caption -->
+										</div> <!-- /.container -->
+									</div> <!-- /.item -->
+
 									<div class="item">
 										<img src="img/gallery-5.jpg" class="img-responsive">
 										<div class="container">
 											<div class="carousel-caption">
 												<h3>headline</h3>
 												<p>example captions</p>
-											</div>
-										</div>
-									</div>
+											</div> <!-- /.carousel-caption -->
+										</div> <!-- /.container -->
+									</div> <!-- /.item -->
+
 									<div class="item">
 										<img src="img/gallery-6.jpg" class="img-responsive">
 										<div class="container">
 											<div class="carousel-caption">
 												<h3>One more for good measure.</h3>
 												<p>example captions</p>
-											</div>
-										</div>
-									</div>
-								</div>
+											</div> <!-- /.carousel-caption -->
+										</div> <!-- /.container -->
+									</div> <!-- /.item -->
+								</div> <!-- /.carousel-inner -->
+
+								<!-- begin of gallery-carousel control -->
 								<a class="left carousel-control" href="#gallery-carousel" role="button" data-slide="prev">
 									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 									<span class="sr-only">Previous</span>
@@ -531,49 +598,60 @@
 									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 									<span class="sr-only">Next</span>
 								</a>
-							</div><!-- /.carousel -->
+								<!-- end of gallery-carousel control -->
+							</div><!-- /#gallery-carousel -->
+							<!-- end of gallery carousel -->
 						</div>
-					</div>
-				</div>
+					</div> <!-- /.row -->
+				</div> <!-- /.gallery-home -->
+				<!-- end of gallery -->
 				
-				<!--Sertifikasi-->
+
+				<!-- begin of sertifikasi-->
 				<div class="sert-home">
 					<div class="row row-centered">
 						<div class="col-xs-10 col-sm-11 col-lg-12 col-centered">
 							<div class="home-title"> <a name="sertifikasi"></a>
 								<p>Sertifikasi</p>
-							</div>
+							</div> <!-- /.home-title -->
 							<div  class="row row-centered">						
 								<div class="col-xs-10 col-md-4 col-lg-3 col-centered">
 									<div class="sert-img">
 										<div class="thumbnail">
 											<img src="img/sertifikasi.png" class="img-responsive">
-										</div>
-									</div>
+										</div> <!-- /.thumbnail -->
+									</div> <!-- /.sert-img -->
 								</div>
 
 								<div class="col-xs-10 col-md-6 col-lg-6 col-centered">
-									<div class="sert pull-right">
+									<div class="sert-desc pull-right">
 										<h3>EFESIENSI WAKTU PERIZINAN FREKUENSI RADIO</h3>
 										<p>"Pemerintah memberikan percepatan perizinan bagi penggunaan izin frekuensi radio", demikian diungkapkan oleh Direktur Operasi Sumber Daya, Rachmat Widayana di Gedung Pusat Teknologi Informasi dan Komunikasi Nasional (PUSTIKNAS) di Ciputat pada Lokakarya Ditjen SDPPI (27/5).</p>
 										<a class="btn btn-primary btn-lg pull-right" href="http://sdppi.kominfo.go.id/berita-efesiensi-waktu-perizinan-frekuensi-radio-27-2330">See more</a>
-									</div>
+									</div> <!-- /.sert-desc -->
 								</div>
-							</div>
+							</div> <!-- /.row -->
 						</div>
-					</div>
-				</div>
-			</div>
+					</div> <!-- /.row -->
+				</div> <!-- /.sert-home -->
+				<!-- /.end of sertifikasi -->
 
+			
+			</div> <!-- /.container -->
 			<div class="clearfix"></div>
-			<div id="push"></div>
-		</div>
-	</div>
+			<div id="push"></div> <!-- div to push footer sticky to bottom -->
+		</div> <!-- /.body -->
+		<!-- end of page content -->
 
+	</div> <!-- /.wrap -->
+	<!-- end of wrap to push footer sticky to bottom -->
+
+	<!-- begin footer -->
 	<div id="footer">
 		<div class="container">
 			<div class="row row-centered">
 				<div class="col-xs-10 col-sm-11 col-lg-12 col-centered">
+					<!-- begin info -->
 					<div class="col-xs-10 col-md-8 col-lg-9">
 						<h4>PUSAT DATA DAN SARANA INFORMATIKA<br>
 						KEMENTRIAN KOMUNIKASI DAN INFORMATIKA &copy; 2013</h4>
@@ -581,23 +659,33 @@
 						Kontak : kontak.kominfo.go.id<br>
 						Telepon : (021) 38433507 - (021) 38433508</p>
 					</div>
+					<!-- end of info -->
+
+					<!-- begin social media -->
 					<div class="col-xs-12 col-md-3 col-lg-2">
 						<div class="col-md-3 col-sm-1 col-xs-2 col-lg-3">
+							<!-- facebook -->
 							<div class="thumbnail">
 								<a class="fb" href="https://www.facebook.com/Kemkominfo">
 									<img src="img/fb.png"/ class="img-responsive">
 								</a>
 							</div>
+							<!-- /.facebook -->
 						</div>
 						<div class="col-md-3 col-sm-1 col-xs-2 col-lg-3">
+							<!-- twitter -->
 							<div class="thumbnail">
 								<a class="tw" href="https://www.twitter.com/Kemkominfo">
 									<img src="img/twitter.png"/ class="img-responsive">
 								</a>
 							</div>
+							<!-- twitter -->
 						</div>
 					</div>
+					<!-- end of social media -->
+
 					<!-- back to top -->
+					<!-- javascript back to top -->
 					<script type="text/javascript">
 						$(document).ready(function(){
 							$('.scrollup').click(function () {
@@ -608,10 +696,15 @@
 							});
 						});
 					</script>
+					<!-- end of javascript back to top -->
 					<a class="scrollup"></a>
+					<!-- end of back to top -->
+
 				</div>
-			</div>
-		</div>
-	</div>
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</div> <!-- /#footer -->
+	<!-- end of footer -->
+
 	</body>
 </html>

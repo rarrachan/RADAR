@@ -194,7 +194,7 @@ a.brand img {
 	text-align: justify;
 }
 .beasiswa-desc p,
-.sert p {
+.sert-desc p {
 	text-indent: 30px;
 	font-size: medium;
 	font-weight: bold;
@@ -207,45 +207,30 @@ a.brand img {
 	text-align: center !important;
 }
 
-.berita p{
+.news p{
 	font-weight: bold;
 	font-size: 15px;
 	text-align: justify;
 	margin-left: 10px;
-}/*
-.berita {
-	background-color: #acacac;
-	height: 96px;
-	margin-top: 10px;
 }
-.berita .thumbnail {
-	margin: 5px;
-}
-
-.berita h4,
-.berita p {
-	margin-left: 5px;
-	margin-right: 5px;
-	color: #FFFFFF
-}*/
 .panel {
 	margin-top: -59px;
 	margin-left: 5px;
 }
-.berita .home-title {
+.news .home-title {
 	position: relative;
 }
-.berita img {
+.news img {
 	height: 60px;
 	width: 100px;
 }
-.panel ul.berita{
+.panel ul.news{
     padding:0px;
     margin:0px;
     list-style:none;
 }
 
-.berita .news-item{
+.news .news-item{
     padding:4px 5px;
     margin:0px;
     border-bottom:1px dotted #555;
