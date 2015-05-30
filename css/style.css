@@ -405,7 +405,10 @@ a.brand img {
 /* end css for error404 and error500 */
 
 /*gallery*/
-.gallery-row .col-xs-10 {
+.gallery-row {
+	margin-bottom: 30px;
+}
+.gallery-item{
 	padding: 1%;
 }
 
