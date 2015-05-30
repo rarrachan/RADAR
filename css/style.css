@@ -1,11 +1,22 @@
-html,
-body {
-	height: 100%;
-	/* The html and body elements cannot have any padding or margin. */
-}
-body,
-input {
+body
+{
 	font-family:"Champagne &amp; Limousines" !important;
+}
+
+/* centered columns styles */
+.row {
+	margin: 0px;
+}
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
 }
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -265,7 +276,7 @@ a.brand img {
 	margin: 0px 15px;
 }
 
-/*error404 dan error500*/
+/* start error404 and error500 */
 
 @font-face {
     font-family: 'goudy-old-styleoldstylenormal';
@@ -291,56 +302,58 @@ a.brand img {
     font-style: normal;
 }
 
-.top-logo {
+.error-top {
 	padding: 2% 10%;
-	text-align: center;
+	margin: auto;
 }
 
-.top-logo p {
+.error-top p {
 	margin-top: 20px;
 	font-size:20px;
 	text-transform: uppercase;
 	font-weight: bold;
 	font-family: 'goudy-old-styleoldstylenormal';
 }
-.top-logo img {
+.error-top img {
 	width: 7%;
+	margin: auto;
 }
 
-.isi{
+.error-content{
 	background-color:#0073B9;
 	padding: 2% 10%;
+	margin: auto;
 }
 
-.err {
-	margin-top: 15px;
+.error-type {
+	border-right:3px solid #ffffff;
+	padding-right: 50px;
 }
-.err h3{
+.error-type h3{
 	font-size:80px;
 	color:#ffffff;
-	padding-bottom: 70px;
 	font-family: 'goudy-old-styleoldstylenormal';
 	text-shadow: 5px 5px 5px #000;
 }
 
-.err h5{
+.error-type h5{
 	font-size:100px;
 	color:#ffffff;
 	font-family: 'goudy-old-styleoldstylenormal';
 	text-shadow: 5px 5px 5px #000;
 }
 
-.divid{vertical-align:center;}
-
-.ket p{
+.error-desc p{
 	font-size:50px;
 	color:#ffffff;
-	line-height:80px;
+	padding-top: 40px;
 	text-align:left;
 	font-family: 'sakkal_majallaregular';
 	text-shadow: 5px 5px 5px #000;
 	font-weight: bold;
 }
+
+/* end css for error404 and error500 */
 
 /*gallery*/
 .gallery-row .col-xs-10 {
@@ -427,12 +440,11 @@ img{
 	#news-ticker{
 		display: none;
 	}
-}
-@media (max-width:500px) {
-	#slideshow-carousel {
-		display: none;
+	.error-desc p {
+		padding-top: 0px;
 	}
 }
+
 @media (min-width:500px) and (max-width:768px) {
 	.carousel {
 		height: 270px !important;
@@ -443,8 +455,58 @@ img{
 	.carousel-inner > .item > img {
 		height: 270px !important;
 	}
+	.error-desc p {
+		font-size: 35px;
+		padding-top: 10px;
+	}
+	.error-type {
+		padding-right: 15px;
+		padding-bottom: 15px;
+	}
+	.error-type h3 {
+		font-size: 50px;
+	}
+	.error-type h5 {
+		font-size: 80px;
+	}
 }
 
+@media (max-width:500px) {
+	#slideshow-carousel {
+		display: none;
+	}
+	.error-desc p {
+		font-size: 30px;
+	}
+	.error-type {
+		padding-right: 30px;
+		padding-top: 10px;
+	}
+	.error-type h3 {
+		font-size: 40px;
+	}
+	.error-type h5 {
+		font-size: 70px;
+	}
+}
+@media (max-width:400px) {
+	.error-desc p {
+		font-size: 25px;
+	}
+	.error-type {
+		padding-right: 15px;
+		margin-top: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.error-type h3 {
+		font-size: 25px;
+		margin-top: 10px;
+	}
+	.error-type h5 {
+		font-size: 50px;
+	}
+}
 /* banner */
 #banner {
 	width: 100%;
