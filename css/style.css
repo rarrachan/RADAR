@@ -405,13 +405,15 @@ a.brand img {
 /* end css for error404 and error500 */
 
 /*gallery*/
-.gallery-row {
+.gallery-row,
+.berita-row {
 	margin-bottom: 30px;
 }
 .gallery-item{
 	padding: 1%;
 }
 
+/*berita page */
 .breadcrumb > li + li:before{
 	color:#CCCCCC;
 	content:"/ ";
