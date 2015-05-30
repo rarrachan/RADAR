@@ -1,5 +1,27 @@
-body
-{
+@font-face {
+	font-family:"Champagne &amp; Limousines";
+	src:url("../font/Champagne_Limousines.eot?") format("eot"),
+	url("../font/Champagne_Limousines.woff") format("woff"),
+	url("../font/Champagne_Limousines.ttf") format("truetype"),
+	url("../font/Champagne_Limousines.svg#Champagne&Limousines") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:'ArialRoundedMTBold-Regular';
+	src: url('../font/ArialRoundedMTBold_gdi.eot');
+	src: url('../font/ArialRoundedMTBold_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../font/ArialRoundedMTBold_gdi.woff') format('woff'),
+		url('../font/ArialRoundedMTBold_gdi.ttf') format('truetype'),
+		url('../font/ArialRoundedMTBold_gdi.otf') format('opentype'),
+		url('../font/ArialRoundedMTBold_gdi.svg#ArialRoundedMTBold-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+
+body{
 	font-family:"Champagne &amp; Limousines" !important;
 }
 
@@ -60,16 +82,6 @@ body
 /*[class*="col-"]{
 	vertical-align:middle;
 }*/
-
-@font-face {
-	font-family:"Champagne &amp; Limousines";
-	src:url("../font/Champagne_Limousines.eot?") format("eot"),
-	url("../font/Champagne_Limousines.woff") format("woff"),
-	url("../font/Champagne_Limousines.ttf") format("truetype"),
-	url("../font/Champagne_Limousines.svg#Champagne&Limousines") format("svg");
-	font-weight:normal;
-	font-style:normal;
-}
 .navbar,
 .dropdown-menu {
 	background-color: #555555 !important;
@@ -487,6 +499,23 @@ img{
 	text-align:justify;
 }
 
+/*landing page */
+.landing-left, .landing-right{
+	margin: 10px 20px 20px 20px;
+	border-style:solid;
+	border-width:thin;
+	border-radius:20px;
+	border-color:#EFEFEF;
+}
+.landing-left {
+	background-color:#F5F5F5;
+	font-size:15px;
+	line-height:30px;
+	text-align:justify;
+}
+.landing-right {
+	background-color: #448ccb;
+}
 /* responsive home */
 @media (max-width:1200px) {
 	.error-desc p {
@@ -686,4 +715,38 @@ now override the 3.3 new styles for modern browsers & apply opacity
       -webkit-transform: translate3d(0, 0, 0);
               transform: translate3d(0, 0, 0);
     }
+}
+
+.landing-right .info {
+	font-family: 'ArialRoundedMTBold-Regular';
+	font-size: 18px;
+	color: #ffffff;
+	width:85px;
+	height: 100px;
+	margin-top: -5px;
+	text-align: center;
+	position: absolute;
+	right: 10px;
+	background-image: url('../img/ribbon.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.landing-right form {
+	padding-top: 60px;
+	font-size: 20px;
+}
+.landing-right label {
+	color: #ffffff;
+}
+.landing-right button {
+	float: right;
+	margin-bottom: 10px;
+	background-color: #a1a1a1;
+	border-color: #a1a1a1;
+	font-size: 20px;
+	color: #ffffff;
+	padding: 0px 20px;
+}
+.landing-right textarea {
+	resize: none;
 }
