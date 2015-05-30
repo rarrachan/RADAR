@@ -538,7 +538,7 @@ img{
 @media (min-width:768px) and (max-width:859px) {
 	.clock {
 		margin-top: -155px !important;
-		margin-right: 200px !important;
+		margin-right: 0px !important;
 	}
 	.navbar-search {
 		margin-top: -75px !important;
