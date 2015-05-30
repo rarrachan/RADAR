@@ -1,3 +1,4 @@
+/* ======================================= all font face =======================================*/
 @font-face {
 	font-family:"Champagne &amp; Limousines";
 	src:url("../font/Champagne_Limousines.eot?") format("eot"),
@@ -20,11 +21,45 @@
 	font-stretch: normal;
 	unicode-range: U+0020-25CA;
 }
-
-body{
-	font-family:"Champagne &amp; Limousines" !important;
+@font-face {
+    font-family: 'goudy-old-styleoldstylenormal';
+    src: url('../font/goudyo-webfont.eot');
+    src: url('../font/goudyo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/goudyo-webfont.woff2') format('woff2'),
+         url('../font/goudyo-webfont.woff') format('woff'),
+         url('../font/goudyo-webfont.ttf') format('truetype'),
+         url('../font/goudyo-webfont.svg#goudy-old-styleoldstylenormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sakkal_majallaregular';
+    src: url('../font/majalla-webfont.eot');
+    src: url('../font/majalla-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/majalla-webfont.woff2') format('woff2'),
+         url('../font/majalla-webfont.woff') format('woff'),
+         url('../font/majalla-webfont.ttf') format('truetype'),
+         url('../font/majalla-webfont.svg#sakkal_majallaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+	font-family:'franchise';
+    src: url('../font/franchise-bold-hinted-webfont.eot');
+    src: url('../font/franchise-bold-hinted-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/franchise-bold-hinted-webfont.woff2') format('woff2'),
+         url('../font/franchise-bold-hinted-webfont.woff') format('woff'),
+         url('../font/franchise-bold-hinted-webfont.ttf') format('truetype'),
+         url('../font/franchise-bold-hinted-webfont.svg#franchise-bold-hinted-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
+/* ======================================= end font face =======================================*/
+
+body {
+	font-family:"Champagne &amp; Limousines" !important;
+}
 /* Wrapper for page content to push down footer */
 #wrap {
 	min-height: 100%;
@@ -33,11 +68,25 @@ body{
 	/* Negative indent footer by it's height */
 	margin: 0 auto -190px;
 }
-
+.body {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 /* Set the fixed height of the footer here */
 #push{
 	margin-bottom:190px;
 }
+
+.scrollup {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	cursor: pointer;
+}
+
+/* ======================================= footer =======================================*/
 
 #footer {
 	padding-top:20px;
@@ -57,18 +106,6 @@ body{
 	color: #ffffff;
 	font-size: 16px;
 }
-.body {
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-.scrollup {
-	width: 60px;
-	height: 60px;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	cursor: pointer;
-}
 
 /* Lastly, apply responsive CSS fixes as necessary */
 @media (max-width: 767px) {
@@ -79,9 +116,11 @@ body{
 		/*padding-right: 20px;*/
 	}
 }
-/*[class*="col-"]{
-	vertical-align:middle;
-}*/
+
+/* ======================================= end footer =======================================*/
+
+/* ======================================= navbar =======================================*/
+
 .navbar,
 .dropdown-menu {
 	background-color: #555555 !important;
@@ -139,34 +178,12 @@ body{
 	   -moz-border-radius: 20px !important;
 	 	    border-radius: 20px !important;
 }
-/*
-}
-a.brand img {
-	margin-left: 13px;
-	margin-bottom: 5px;
-}
-.navbar .nav {
-	font-size: 20px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
 
-.navbar .nav > li > a:hover {
-	background-color: #363636;
-}
+/* ======================================= end navbar =======================================*/
 
-.navbar .brand,
-.navbar .nav a {
-	color: #ffffff !important;
+.thumbnail {
+	border: none !important;
 }
-
-.navbar .container{
-	padding-bottom:0px;
-}
-.navbar-search input {
-	margin-top: 5px;
-	width: 170px !important;
-}*/
 .thumbnail a {
 	text-align: center;
 }
@@ -228,9 +245,6 @@ a.brand img {
     /* inline-block space fix */
     margin-right:-4px;
 }
-.thumbnail {
-	border: none !important;
-}
 .menteri {
 	background-color: #448ccb;
 	-webkit-border-radius: 20px;
@@ -264,7 +278,6 @@ a.brand img {
 .row-top {
 	margin-bottom: 25px;
 }
-
 .news p{
 	font-weight: bold;
 	font-size: 15px;
@@ -287,7 +300,6 @@ a.brand img {
     margin:0px;
     list-style:none;
 }
-
 .news .news-item{
     padding:4px 5px;
     margin:0px;
@@ -299,8 +311,6 @@ a.brand img {
 	width: 170px;
 	height: 170px;
 }
-
-
 .beasiswa-img,
 .sert-img{
 	margin-top: 10px;
@@ -315,6 +325,9 @@ a.brand img {
 .row-news .col-sm-8 {
 	padding: 0px;
 }
+
+/* ======================================= carousel =======================================*/
+
 #gallery-carousel {
   height: 330px;
 }
@@ -337,31 +350,10 @@ a.brand img {
   height: 435px;
 }
 
-/* start error404 and error500 */
+/* ======================================= end carousel =======================================*/
 
-@font-face {
-    font-family: 'goudy-old-styleoldstylenormal';
-    src: url('../font/goudyo-webfont.eot');
-    src: url('../font/goudyo-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/goudyo-webfont.woff2') format('woff2'),
-         url('../font/goudyo-webfont.woff') format('woff'),
-         url('../font/goudyo-webfont.ttf') format('truetype'),
-         url('../font/goudyo-webfont.svg#goudy-old-styleoldstylenormal') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'sakkal_majallaregular';
-    src: url('../font/majalla-webfont.eot');
-    src: url('../font/majalla-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/majalla-webfont.woff2') format('woff2'),
-         url('../font/majalla-webfont.woff') format('woff'),
-         url('../font/majalla-webfont.ttf') format('truetype'),
-         url('../font/majalla-webfont.svg#sakkal_majallaregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+/* ======================================= error 404 & error 500 page =======================================*/
 
 .error-top {
 	padding: 2% 10%;
@@ -414,9 +406,8 @@ a.brand img {
 	font-weight: bold;
 }
 
-/* end css for error404 and error500 */
+/* ======================================= end =======================================*/
 
-/*gallery*/
 .gallery-row,
 .berita-row {
 	margin-bottom: 30px;
@@ -425,7 +416,6 @@ a.brand img {
 	padding: 1%;
 }
 
-/*berita page */
 .breadcrumb > li + li:before{
 	color:#CCCCCC;
 	content:"/ ";
@@ -487,7 +477,8 @@ img{
 	text-decoration:none;
 }
 
-/* kolom html */
+/* ======================================= kolom html =======================================*/
+
 .kolom-satu, .kolom-dua, .kolom-tiga{
 	margin-left:10px;
 	margin-right: 10px;
@@ -505,7 +496,10 @@ img{
 	text-align:justify;
 }
 
-/*landing page */
+/* ======================================= end =======================================*/
+
+/* ======================================= landing page =======================================*/
+
 .landing-left, .landing-right{
 	margin: 10px 20px 20px 20px;
 	border-style:solid;
@@ -522,41 +516,48 @@ img{
 .landing-right {
 	background-color: #448ccb;
 }
-/* responsive home */
-@media (max-width:1200px) {
+
+/* ======================================= end =======================================*/
+
+/* ======================================= responsive =======================================*/
+
+@media (max-width:400px) {
 	.error-desc p {
-		padding-top: 0px;
+		font-size: 25px;
+	}
+	.error-type {
+		padding-right: 15px;
+		margin-top: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.error-type h3 {
+		font-size: 25px;
+		margin-top: 10px;
+	}
+	.error-type h5 {
+		font-size: 50px;
 	}
 }
-@media (max-width:859px) {
-	.navbar-nav {
-		padding-top: 0px;
-		padding-bottom: 20px;
-	}
-}
-@media (max-width: 991px) {
-   .live-tweet,
-	#banner,
-	#news-ticker{
+@media (max-width:500px) {
+	#slideshow-carousel {
 		display: none;
 	}
-}
-@media (min-width:768px) and (max-width:859px) {
-	.clock {
-		margin-top: -155px !important;
-		margin-right: 0px !important;
+	.gallery-home {
+		display: none;
 	}
-	.navbar-search {
-		margin-top: -75px !important;
+	.error-desc p {
+		font-size: 30px;
 	}
-	#slideshow-carousel {
-		height: 350px !important;
+	.error-type {
+		padding-right: 30px;
+		padding-top: 10px;
 	}
-	#slideshow-carousel .item {
-		height: 350px !important;
+	.error-type h3 {
+		font-size: 40px;
 	}
-	#slideshow-carousel .item img {
-		height: 350px !important;
+	.error-type h5 {
+		font-size: 70px;
 	}
 }
 @media (max-width:767px) {
@@ -598,47 +599,47 @@ img{
 		font-size: 80px;
 	}
 }
-
-@media (max-width:500px) {
+@media (min-width:767px) and (max-width:859px) {
+	.clock {
+		margin-top: -155px !important;
+		margin-right: 185px !important;
+	}
+	.navbar-search {
+		margin-top: -75px !important;
+	}
 	#slideshow-carousel {
-		display: none;
+		height: 350px !important;
 	}
-	.gallery-home {
-		display: none;
+	#slideshow-carousel .item {
+		height: 350px !important;
 	}
-	.error-desc p {
-		font-size: 30px;
-	}
-	.error-type {
-		padding-right: 30px;
-		padding-top: 10px;
-	}
-	.error-type h3 {
-		font-size: 40px;
-	}
-	.error-type h5 {
-		font-size: 70px;
+	#slideshow-carousel .item img {
+		height: 350px !important;
 	}
 }
-@media (max-width:400px) {
-	.error-desc p {
-		font-size: 25px;
-	}
-	.error-type {
-		padding-right: 15px;
-		margin-top: 10px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-	.error-type h3 {
-		font-size: 25px;
-		margin-top: 10px;
-	}
-	.error-type h5 {
-		font-size: 50px;
+@media (max-width:859px) {
+	.navbar-nav {
+		padding-top: 0px;
+		padding-bottom: 20px;
 	}
 }
-/* banner */
+@media (max-width: 991px) {
+   .live-tweet,
+	#banner,
+	#news-ticker{
+		display: none;
+	}
+}
+@media (max-width:1200px) {
+	.error-desc p {
+		padding-top: 0px;
+	}
+}
+
+/* ======================================= end responsive =======================================*/
+
+/* ======================================= banner =======================================*/
+
 #banner {
 	width: 100%;
 	height: 230px;
@@ -697,10 +698,6 @@ img{
   z-index: 2;
 }
 
-/*
-WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
-now override the 3.3 new styles for modern browsers & apply opacity
-*/
 @media all and (transform-3d), (-webkit-transform-3d) {
     .carousel-fade .carousel-inner > .item.next,
     .carousel-fade .carousel-inner > .item.active.right {
@@ -722,6 +719,8 @@ now override the 3.3 new styles for modern browsers & apply opacity
               transform: translate3d(0, 0, 0);
     }
 }
+
+/* ======================================= end banner =======================================*/
 
 .landing-right .info {
 	font-family: 'ArialRoundedMTBold-Regular';
@@ -757,21 +756,9 @@ now override the 3.3 new styles for modern browsers & apply opacity
 	resize: none;
 }
 
+/* ======================================= end banner =======================================*/
 
-/*under consruction*/
-
-@font-face{
-	font-family:'franchise';
-    src: url('../font/franchise-bold-hinted-webfont.eot');
-    src: url('../font/franchise-bold-hinted-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/franchise-bold-hinted-webfont.woff2') format('woff2'),
-         url('../font/franchise-bold-hinted-webfont.woff') format('woff'),
-         url('../font/franchise-bold-hinted-webfont.ttf') format('truetype'),
-         url('../font/franchise-bold-hinted-webfont.svg#franchise-bold-hinted-webfont') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
+/* ======================================= under construction =======================================*/
 
 .container-fluid{
 	margin:0;
@@ -844,3 +831,5 @@ now override the 3.3 new styles for modern browsers & apply opacity
 		margin-top: 25px;
 	}
 }
+
+/* ======================================= end underconstruction =======================================*/
