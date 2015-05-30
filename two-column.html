@@ -1,5 +1,6 @@
 <!-- BY RADAR -->
 
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -11,15 +12,17 @@
 		<!-- stylesheets -->
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/bootstrap.css" rel="stylesheet" media="screen">
-		<link href="css/bootstrap-responsive.css" rel="stylesheet">
 		<link href="css/digital-clock.css" rel="stylesheet">
 		<link href="css/carousel.css" rel="stylesheet">
+		<link href="css/ticker-style.css" rel="stylesheet">
 
 		<!-- javascripts -->
-		<script src="js/jquery.js"></script>
-		<script src="js/bootstrap.js"></script>
-		<script src="js/digital-clock.js"></script>
-		
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script src="js/bootstrap.js" type="text/javascript"></script>
+		<script src="js/digital-clock.js" type="text/javascript"></script>
+		<script src="js/jquery.ticker.js" type="text/javascript"></script>
+		<script src="js/jquery.bootstrap.newsbox.js" type="text/javascript"></script>
+
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -28,95 +31,106 @@
 
 	<body>
 
+	<!-- wrap to push footer sticky to bottom -->
+	<div id="wrap">
 
-    <div id="wrap">
-
-    	<div class="navbar navbar-static-top">
-			<div class="navbar-inner">
-				<div class="container">
-					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		<!-- begin of navbar -->
+		<nav class="navbar navbar-default navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="brand" href="#">
-						<img src="img/logo.png"/><br>
+					<a class="navbar-brand" href="#">
+						<img src="img/logo.png"/>
 						<p>KEMKOMINFO</p>
 					</a>
-					<div class="nav-collapse collapse">
-						<ul class="nav">
-							<li><a href="#">Beranda</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Layanan <b class="caret"></b></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Perizinan</a></li>
-									<li><a href="#">Lelang</a></li>
-									<li><a href="#">Pengaduan</a></li>
-									<li><a href="#">Domain ID</a></li>
-									<li><a href="#">e-Government</a></li>
-									<li><a href="#">e-Business</a></li>
-									<li><a href="#">Sertifikasi</a></li>
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Publikasi <b class="caret"></b></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Laporan Keungan</a></li>
-									<li><a href="#">Laporan Akuntabilitas</a></li>
-									<li><a href="#">Rencana Kerja Anggaran</a></li>
-									<li><a href="#">Laki[</a></li>
-									<li><a href="#">Renja</a></li>
-									<li><a href="#">Restra</a></li>
-									<li><a href="#">Perjanjian/MOU</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Profil</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Info Publik <b class="caret"></b></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Download</a></li>
-									<li><a href="#">Statistik</a></li>
-									<li><a href="#">Hasil Penelitian</a></li>
-									<li><a href="#">Jurnal Ilmiah</a></li>
-									<li><a href="#">Sttreaming</a></li>
-									<li><a href="#">Sistem Informasi Geografis</a></li>
-									<li><a href="#">Perjanjian/MOU</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Program</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Lainnya <b class="caret"></b></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Gallery</a></li>
-									<li><a href="#">Siaran Pers</a></li>
-									<li><a href="#">Beasiswa</a></li>
-									<li><a href="#">Regulasi</a></li>
-									<li><a href="#">Agenda</a></li>
-									<li><a href="#">Profile</a></li>
-									<li><a href="#">FAQ</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div><!--/.nav-collapse -->
-					<div class="nav navbar-nav navbar-right">
-						<div class="clock">
-							<div id="Date"></div>
-							<ul>
-								<li id="hours"> </li>
-								<li id="point">:</li>
-								<li id="min"> </li>
-								<li id="point">:</li>
-								<li id="sec"> </li>
-							</ul>
-						</div>
-						<form class="navbar-search">
-							<input type="text" class="search-query" placeholder="Cari...">
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
+				</div> <!-- /.navbar-header -->
 
+				<div id="navbar" class="collapse navbar-collapse navbar-left">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Beranda</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Layanan <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Perizinan</a></li>
+								<li><a href="#">Lelang</a></li>
+								<li><a href="#">Pengaduan</a></li>
+								<li><a href="#">Domain ID</a></li>
+								<li><a href="#">e-Government</a></li>
+								<li><a href="#">e-Business</a></li>
+								<li><a href="#">Sertifikasi</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Publikasi <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Laporan Keungan</a></li>
+								<li><a href="#">Laporan Akuntabilitas</a></li>
+								<li><a href="#">Rencana Kerja Anggaran</a></li>
+								<li><a href="#">Laki[</a></li>
+								<li><a href="#">Renja</a></li>
+								<li><a href="#">Restra</a></li>
+								<li><a href="#">Perjanjian/MOU</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Profil</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Info Publik <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Download</a></li>
+								<li><a href="#">Statistik</a></li>
+								<li><a href="#">Hasil Penelitian</a></li>
+								<li><a href="#">Jurnal Ilmiah</a></li>
+								<li><a href="#">Sttreaming</a></li>
+								<li><a href="#">Sistem Informasi Geografis</a></li>
+								<li><a href="#">Perjanjian/MOU</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Program</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Lainnya <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Gallery</a></li>
+								<li><a href="#">Siaran Pers</a></li>
+								<li><a href="#">Beasiswa</a></li>
+								<li><a href="#">Regulasi</a></li>
+								<li><a href="#">Agenda</a></li>
+								<li><a href="#">Profile</a></li>
+								<li><a href="#">FAQ</a></li>
+							</ul>
+						</li>
+					</ul>
+					</div> <!-- /.nav-collapse -->
+
+					<!-- begin of search form -->
+					<form class="navbar-search navbar-right">
+						<div class="form-group" style="display:inline-block; width:70%">
+							<div class="input-group" style="width:100%">
+								<input type="text" class="form-control navbar-search" placeholder="Cari...">
+							</div>
+						</div>
+					</form> <!-- /.navbar-form -->
+					<!-- end of search form -->
+					
+					<!-- begin of clock -->
+					<div class="clock navbar-right">
+						<div id="Date"></div>
+						<ul>
+							<li id="hours"> </li>
+							<li id="point">:</li>
+							<li id="min"> </li>
+							<li id="point">:</li>
+							<li id="sec"> </li>
+						</ul>
+					</div>
+					<!-- end of clock -->
+
+			</div> <!-- /.container -->
+		</nav> <!-- /.navbar-static-top -->
 		<!-- Begin page content -->
 		<div class="body">
 			<div class="container">
