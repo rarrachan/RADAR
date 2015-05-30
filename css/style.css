@@ -832,5 +832,15 @@ now override the 3.3 new styles for modern browsers & apply opacity
 	margin-top:50px;
 	text-align:center;
 	color:#545454;
-	
+}
+
+@media (max-width: 400px) {
+	.cons-top h1 {
+		font-size: 150px;
+		padding-top: 20%;
+	}
+	.cons-bottom h3 {
+		font-size: 70px;
+		margin-top: 25px;
+	}
 }
